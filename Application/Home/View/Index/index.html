@@ -10,10 +10,10 @@
 <div class="C w1080">
     <!--广告区域 start-->
     <ul class="adList clearfix">
-        <li><a><img src="{$config['view_public']}img/tx.jpeg" width="250px" height="120px"></a></li>
-        <li><a><img src="{$config['view_public']}img/tx.jpeg" width="250px" height="120px"></a></li>
-        <li><a><img src="{$config['view_public']}img/tx.jpeg" width="250px" height="120px"></a></li>
-        <li><a><img src="{$config['view_public']}img/tx.jpeg" width="250px" height="120px"></a></li>
+        <li><a><img src="{$config['view_public']}img/tx.jpeg" width="258" height="120px"></a></li>
+        <li><a><img src="{$config['view_public']}img/tx.jpeg" width="258" height="120px"></a></li>
+        <li><a><img src="{$config['view_public']}img/tx.jpeg" width="258" height="120px"></a></li>
+        <li><a><img src="{$config['view_public']}img/tx.jpeg" width="258" height="120px"></a></li>
     </ul>
     <!--广告区域 end-->
     <!--主要内容 start-->
@@ -24,23 +24,59 @@
                 <a href="#">旅游定制</a>
             </div>
             <ul class="list1">
+                <for start="1" end="4" name="i">
                 <li>
                     <h3>出境长线</h3>
-                    <div>热门景点玩法</div>
-                    <ul>
+                    <p>热门景点玩法</p>
+                    <ul class="distList clearfix">
+                        <for start="1" end="10" name="j">
                         <li><a>美国</a></li>
+                        </for>
                     </ul>
                 </li>
+                </for>
+            </ul>
+            <ul class="list2">
+                <for start="1" end="5">
+                <li>
+                    <div class="title">
+                        旅游攻略
+                    </div>
+                    <div>
+                        <div class="index-container-1" style="position: relative;overflow: hidden;">
+                            <div class="swiper-wrapper">
+                                <a class="swiper-slide" href="#">
+                                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494249305220&di=814b9d89304d1683848257bba81aef8c&imgtype=0&src=http%3A%2F%2Fpic2m.quanjing.com%2Fchineseview059%2Feast-ep-a31-1430706.jpg" style="width: 100%;height: 300px;"/>
+                                </a>
+                                <a class="swiper-slide" href="#">
+                                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494245699772&di=e8c1b7613818b638d1dafa7f753117df&imgtype=0&src=http%3A%2F%2Fpic4.40017.cn%2Fscenery%2Fdestination%2F2016%2F07%2F30%2F21%2F4FGM5T.jpg" style="width:100%;height:300px;">
+                                </a>
+                                <a class="swiper-slide" href="#">
+                                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494249208211&di=b1c7cd096eb32beb5b2264611ca9d5d6&imgtype=0&src=http%3A%2F%2Fpic2m.quanjing.com%2Fph028%2F485-p00689.jpg" style="width:100%;height:300px;">
+                                </a>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="info">
+                            <h4>【绝色天堂】上天入海玩浪漫（教科书般的攻略附送）（教科书般的攻略附送）（教科书般的攻略附送）</h4>
+                            <p><span>里斯</span><span style="float: right;">123人浏览</span></p>
+                        </div>
+                    </div>
+                </li>
+                </for>
             </ul>
         </div>
-        <div class="r">111
+        <div class="r">
+
 
         </div>
     </div>
     <!--主要内容 end-->
 </div>
 
-
+<script src="Public/lib/jquery-3.2.1.min.js"></script>
+<script src="Public/lib/swiper/swiper-3.3.1.min.js"></script>
+<script src="Public/js/new-swiper.js"></script>
 
 <include file="Public/footer"/>
 </body>

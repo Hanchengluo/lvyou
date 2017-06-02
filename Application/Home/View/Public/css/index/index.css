@@ -1,10 +1,24 @@
 
-.adList{padding: 20px;}
-.adList>li{float: left;width: 250px;margin: 0 5px;}
-
+.adList{padding: 8px 0;}
+.adList>li{float: left;width: 258px;margin-left: 16px;}
+.adList>li:first-child{margin-left: 0px;}
 .CC{}
 .CC .l{float: left;width: 300px;}
 .l .btnB{}
-.l .btnB a{display: block;height: 42px;line-height: 42px;background-color: #ff9d00;color: #fff;border-radius: 5px;
+.l .btnB a{display: block;height: 60px;line-height: 60px;background-color: #ff9d00;color: #fff;border-radius: 5px;
     text-align: center;margin: 10px 0;}
+.l .list1{padding-top: 10px;}
+.l .list1>li{margin-top: 20px;}
+.l .list1 h3{font-size: 16px;line-height: 32px;border-bottom: 4px solid #ddd;}
+.l .list1 p{line-height: 28px;}
+.distList>li{float: left;width: 20%;line-height: 28px;}
+.distList>li>a{color: #666;}
+.distList>li>a:hover{color: #ff9d00;}
+.l .list2{padding-top: 10px;}
+.l .list2>li{margin-top: 20px;}
+.l .list2 .title{border: 1px solid #ddd;border-bottom: 0px;height: 38px;line-height: 38px;width: 100px;text-align: center;}
+.l .list2 .info{border: 1px solid #ddd;border-top: 0px;padding: 0 5px 2px 5px;}
+.l .list2 .info h4{color: #333;padding: 5px 0}
+.l .list2 .info span{font-size: 12px;color: #666;}
+
 .CC .r{float: right;width: 780px;}
