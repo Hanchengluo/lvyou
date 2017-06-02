@@ -1,5 +1,5 @@
     <style>
-        .w1200{width: 1080px;margin: 0 auto;}
+        .w1080{width: 1080px;margin: 0 auto;}
         .top{}
             #logo{float: left;}
             .top .nav{margin-left: 20px;float: left;}
@@ -10,8 +10,8 @@
             .top .nav>li:hover{border-bottom: 2px solid #ff9d00;}
             .top .nav>li:hover a{color: #ff9d00;}
             .top .nav>.current:hover a{color: #fff;}
-            .top .r{float: right;}
-            .top .r>span{line-height: 30px;font-size: 16px;}
+            .top .r{float: right;padding: 10px 0;}
+            .top .r>span{line-height: 20px;font-size: 16px;}
         .index-swiper-container{position: relative;overflow: hidden;}
         .searchB{position: absolute;width: 500px;height: 80px;border-radius: 10px;margin-left: -250px;margin-top: -40px;
             left: 50%;top: 70%;background-color: rgba(0,0,0,.7);z-index: 10;}
@@ -25,9 +25,9 @@
     <!--主页顶部 start-->
         <!--1-->
         <div class="top">
-            <div class="w1200 clearfix">
+            <div class="w1080 clearfix">
                 <div id="logo">
-                    <a href="#"><img src="../img/tx.jpeg" width="120" height="60"></a>
+                    <a href="#"><img src="{$config['view_public']}img/tx.jpeg" width="120" height="60"></a>
                 </div>
                 <ul class="nav clearfix">
                     <li class="current"><a href="#">首页</a></li>
@@ -70,6 +70,6 @@
         </div>
         <!--2/-->
     <!--主页顶部 end-->
-    <script src="../lib/jquery-3.2.1.min.js"></script>
-    <script src="../lib/swiper/swiper-3.3.1.min.js"></script>
-    <script src="../js/new-swiper.js"></script>
+    <script src="Public/lib/jquery-3.2.1.min.js"></script>
+    <script src="Public/lib/swiper/swiper-3.3.1.min.js"></script>
+    <script src="Public/js/new-swiper.js"></script>

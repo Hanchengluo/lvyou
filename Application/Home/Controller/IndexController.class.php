@@ -3,9 +3,12 @@
 namespace Home\Controller;
 use Think\Controller;
 class IndexController extends BaseController{
-    public function index(){
-    }
 
+    // 网站主页
+    public function index(){
+//        $this->show("这是首页");
+        $this->display();
+    }
     // 商品详情页
     public function goods_details(){
         $this->display();

@@ -1,0 +1,10 @@
+
+.adList{padding: 20px;}
+.adList>li{float: left;width: 250px;margin: 0 5px;}
+
+.CC{}
+.CC .l{float: left;width: 300px;}
+.l .btnB{}
+.l .btnB a{display: block;height: 42px;line-height: 42px;background-color: #ff9d00;color: #fff;border-radius: 5px;
+    text-align: center;margin: 10px 0;}
+.CC .r{float: right;width: 780px;}
