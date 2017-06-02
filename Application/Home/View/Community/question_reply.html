@@ -1,0 +1,81 @@
+<include file="Public/header"/>
+<link rel="stylesheet" href="{$config['view_public']}css/community/question_reply.css">
+<script type="text/javascript">$("title").html('回答页');</script>
+</head>
+<body>
+<include file="Public/top_2"/>
+    <div class="qReply">
+        <!--顶部的返回按钮 start-->
+        <div class="backB">
+            <a id="back" title="返回"><i class="fa fa-angle-left"></i></a>
+        </div>
+        <!--顶部的返回按钮 start-->
+        <!--主体区域 start-->
+        <div class="w820">
+            <!--1-->
+            <div class="questionB">
+                <h1>拿着波兰的一年多次申根签可以直接只入境法国德国等国家吗？</h1>
+                <div class="userInfo">
+                    <a href="#"><img class="tx" src="{$config['view_public']}img/tx.jpeg" width="30px"></a>
+                    <a class="username" href="#">小明</a>
+                </div>
+                <div class="qDesc">
+                    我于2017年初在波兰驻北京大使馆申请到了为期1年的多次入境申根签证，当时申请的时候填写的第一个入境申根国家是波兰。<br />
+                        在2017年1月份去过波兰且只去过波兰一个国家。<br />
+                        我计划于今年7月份直接入境德国或者法国，应该会在法国长时间停留，而不会去波兰，这样入境的时候会被法国或者德国拒入境吗？<br />
+                        谢谢！
+                </div>
+                <div class="meta">
+                    <span><i class="fa fa-eye">&nbsp;132人浏览</i>&nbsp;&nbsp;&nbsp;&nbsp;11个回答</span>
+                    <a id="btn_answer">回答</a>
+                </div>
+            </div>
+            <!--1/-->
+            <!--2-->
+            <div id="gl_comment">
+                <ul class="commentList">
+                    <for star="1" end="10">
+                    <li>
+                        <a href="#"><img class="tx" src="{$config['view_public']}img/tx.jpeg" width="60px"></a>
+                        <div>
+                            <div class="comment_mate" style="padding-right: 10px;">
+                                <a href="#">浅浅快跑</a><span>2017-01-06 17:53</span>
+                            </div>
+                            <div class="comment_content">
+                                <p>皇后镇花园处于皇后镇市中心的对面，从湖的这边遥望着皇后镇的那些酒店，住宅，半山坡上的房子，会有不一样的感受。每个季节花园里的花儿都会争相开放，春季的郁金香，夏季的小兰花，玫瑰花，秋季冬季都会有五颜六色的花儿在花园里迎接着来自远方的客人！</p>
+                            </div>
+                        </div>
+                    </li>
+                    </for>
+                </ul>
+            </div>
+            <div id="comment">
+                <a href="#"><img class="tx" src="{$config['view_public']}img/tx.jpeg" width="60px"></a>
+                <div class="clearfix">
+                    <div>
+                        <textarea cols="30" rows="10" placeholder=""></textarea>
+                    </div>
+                    <div id="btn_sub">回答</div>
+                </div>
+            </div>
+            <!--2/-->
+
+        </div>
+        <!--主体区域 end-->
+    </div>
+<include file="Public/footer" />
+<script>
+    $(function() {
+        //返回按钮点击
+        $("#back").click(function(){
+            history.back(-1);
+        });
+
+        //回答按钮（问题描述侧边的）点击
+        $("#btn_answer").click(function(){
+            $("textarea").focus();
+        });
+    });
+</script>
+</body>
+</html>

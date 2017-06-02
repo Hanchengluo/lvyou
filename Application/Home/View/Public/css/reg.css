@@ -1,0 +1,41 @@
+#center{padding-top: 50px;}
+a.logo{width: 75px;height: 90px;display: block;background: url("../img/logo.png");margin: 0 auto;}
+/*顶部Nav*/
+.input_block{background-color: #ffffff;border-radius: 4px;padding: 10px 30px;box-shadow: 0 2px 6px rgba(0,0,0,.5);}
+.input_block .top{height: 50px;border-bottom: 1px solid #ddd;}
+.input_block .top>div{border-bottom: 2px solid rgba(255,255,255,0);text-align: center;
+    width: 50%;float: left;font-size: 16px;line-height: 49px;
+    cursor: pointer;color: #666;}
+.input_block .top>div.current{border-bottom: 2px solid #ff9d00;}
+
+/*表单*/
+.input_block .center{padding-top: 10px;}
+.input_block .center .nodisplay{display: none;}
+.input_block input[type="text"]{width: 274px;height: 32px;padding-left: 4px;
+    outline: none;border: 1px solid #999;border-radius: 2px;}
+.input_block form>input[type="text"]{margin-top: 20px;}
+.input_block  input[type="submit"]{width: 280px;height: 34px;outline: none;border: none;
+    background-color: #ff9d00;color: #fff;cursor: pointer;border-radius: 2px;margin-top: 20px;}
+.input_block  input[type="submit"]:hover{background-color: #ff8a00;}
+.input_block  input[type="checkbox"]{margin: 0px;}
+.input_block #form2 input[type="submit"]{margin-top: 20px;}
+
+/*同处一行的表单元素*/
+.line1,.line2,.line3{margin-top: 20px;height: 34px;}
+.line1>select{float: left;width: 80px;height: 34px;margin-right: 4px;outline: none;border: 1px solid #ff9d00;}
+.line1>input[type="text"]{float:right;width: 180px;}
+.line2>input[type="text"]{float:left;width: 180px;}
+.line2>img{float: right;}
+.line3>input[type="text"]{float:left;width: 180px;}
+.line3>input[type="button"]{float:right;height: 34px;width: 80px;outline: none;border: none;
+    background-color: #ff9d00;color: #fff;cursor: pointer;border-radius: 2px;}
+.line3>input[type="button"]:hover{background-color: #ff8a00;}
+/*表单中的链接块*/
+.form_link{line-height: 32px;color: #666;}
+.form_link a{font-size: 12px;color: #ff9d00;}
+.form_link .l{float: left;font-size: 12px;}
+.form_link .r{float: right;font-size: 12px;}
+
+@media screen and (max-height: 700px){
+    a.logo{display: none;}
+}

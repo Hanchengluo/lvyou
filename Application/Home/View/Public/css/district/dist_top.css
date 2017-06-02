@@ -1,0 +1,18 @@
+/*目的地相关页顶部的样式*/
+#place_top{background-color: #fff;border-bottom:1px solid #d7d7d7;height: 160px;}
+.plcTopBar{margin-bottom: 15px;}
+#plcName{float: left;}
+#plcName *{font-size: 32px;line-height:42px;color: #000;}
+#plcMeta{float: right;margin-top: 56px;font-size: 16px;line-height: 24px;color: #959595}
+.plcTopNav{border-top:1px solid #f5f5f5;}
+.plcTopNav>.L{float: left;}
+.plcTopNav>.L li{float: left; }
+.plcTopNav>.L li a{display: block;line-height: 58px;padding:0px 15px;border-bottom:2px solid #fff;}
+.plcTopNav>.L li a:hover{border-bottom: 2px solid #ff9d00;}
+.plcTopNav>.R{float: right;margin-top: 16px;}
+.plcTopNav>.R #search{height: 28px;line-height: 28px;padding-left: 4px;
+    color: #666;border-radius: 4px;transition: width .5s ease 0s;-webkit-transition: width .5s ease 0s;
+    outline: none;}
+.search1{width: 130px;border: 1px solid #efefef;background-color:#efefef;}
+.search2{width: 260px;border: 1px solid #ff9d00;background-color:#fff;}
+.icon_search{font-size: 16px;position: relative;left: -28px;color: #999;cursor: pointer;}

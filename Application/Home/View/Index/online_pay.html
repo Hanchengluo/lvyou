@@ -1,0 +1,72 @@
+<include file="Public/header"/>
+<link rel="stylesheet" href="{$config['view_public']}css/index/online_pay.css">
+<script type="text/javascript">$("title").html('在线支付');</script>
+</head>
+<body>
+<include file="Public/top_2"/>
+    <div class="onlinePay">
+        <!--顶部的step块 start-->
+        <div class="stepB w780">
+            <ul class="stepList clearfix">
+                <li class="step1"><div><i></i></div><p>选择产品</p></li>
+                <li class="step2"><div><i></i></div><p>填写订单</p></li>
+                <li class="step3"><div><i></i></div><p>在线支付</p></li>
+                <li class="step4 h"><div><i></i></div><p>支付成功</p></li>
+            </ul>
+        </div>
+        <div class="orderInfo w780">
+            <p style="font-size: 21px;font-weight: bold;">订单已生成！订单号：QYER980343423</p>
+            <p style="font-size: 16px;line-height: 32px;">北京直飞冲绳4/5天往返含税机票（赠送单次/三年个人旅游签证+wifi）</p>
+            <p style="font-size: 12px;color: #ff0000;">请在57分钟45秒内支付，逾期订单将自动关闭</p>
+        </div>
+        <div style="padding-top: 40px;width: 800px;margin: 0 auto;">
+            <ul class="payNav clearfix">
+                <li class="current" data-i="1">支付平台</li>
+                <li data-i="2">信用卡</li>
+                <li data-i="3">储蓄卡</li>
+            </ul>
+            <div class="payMode">
+                <ul class="payModeList clearfix">
+                    <li>支付宝</li>
+                    <li>微信支付</li>
+                    <li>在线支付</li>
+
+                </ul>
+                <ul class="payModeList clearfix nodisplay">
+                    <li>支付宝</li>
+                    <li>微信支付</li>
+                    <li>在线支付</li>
+                    <li>支付宝</li>
+                    <li>微信支付</li>
+                    <li>在线支付</li>
+                </ul>
+                <ul class="payModeList clearfix nodisplay">
+                    <li>支付宝</li>
+                    <li>微信支付</li>
+                    <li>在线支付</li>
+                    <li>支付宝</li>
+                    <li>微信支付</li>
+                    <li>在线支付</li>
+                    <li>支付宝</li>
+                    <li>微信支付</li>
+                    <li>在线支付3</li>
+                </ul>
+            </div>
+            <div style="height: 48px;line-height: 48px;background-color: #bbb;width: 790px;padding-left: 10px;"><span class="mnum">￥1999</span>
+                <div style="float: right;font-size: 16px;line-height: 48px;height: 48px;background-color: #ff7466;padding: 0px 10px;color: #fff;cursor: pointer;">确认支付</div></div>
+        </div>
+    </div>
+<<include file="Public/footer"/>
+    <script>
+        $(function() {
+            $(".payNav>li").click(function () {
+                $(".payNav>li").removeClass();
+                $(this).addClass("current");
+                var i = $(this).attr("data-i");
+                $(".payModeList").addClass("nodisplay");
+                $(".payModeList").eq(i-1).removeClass("nodisplay");
+            });
+        });
+    </script>
+</body>
+</html>

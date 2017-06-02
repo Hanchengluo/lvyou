@@ -1,0 +1,25 @@
+body{background-color: #efefef;}
+#wo{margin-top: 20px;width: 682px;margin-left: 18px;}
+.wo_nav{margin: 0px 1px;}
+.wo_nav>li{float: left;width: 130px; height: 98px;background-color: #fff;border-radius: 6px;margin: 0 20px;text-align: center;padding-top: 32px;}
+.wo_nav i{background-image: url(../../img/user_icon.png);width: 45px; height: 46px;display: inline-block;background-position: -210px -425px;}
+.wo_nav>li>a:hover i{background-position: -210px -476px;}
+.wo_nav span{display: block;font-size: 16px;color: #999;}
+.wo_nav>li>a:hover span{color: #ff8a00;}
+.wo_log{padding: 21px 21px 9px 21px;background-color: #fff;margin-top: 12px;margin-left: 1px;margin-right: 1px;}
+.wo_log>li{margin-bottom: 12px;}
+.wo_log>li>div:first-child{float: left;width: 498px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.wo_log>li>div:last-child{float: right;width: 140px;text-align: right;}
+.wo_log a{color: #ff8a00}
+.wo_log a:hover{text-decoration: underline;}
+.wo_yj{margin-left: 1px;margin-right: 1px;margin-top: 12px;background-color: #ffffff;}
+.wo_yj>li{padding-bottom: 30px;}
+.wo_yj .yj_info{padding: 10px 30px 0 30px;}
+.wo_yj .yj_title>.title_info{width: 500px;float: left;}
+.wo_yj .yj_title>.zan{float: right;text-align: center;color: #999999;}
+.wo_yj .yj_title>.zan:hover{cursor: pointer;}
+.wo_yj .yj_title>.zan:hover i{color: #ff8a00;}
+.title_info h3 a{font-size: 18px;color: #ff8a00;}
+.title_info h3 a:hover{text-decoration: underline;}
+.title_info div{margin-top: 10px;color: #999;}
+.yj_word{color: #666666;margin-top: 12px;}

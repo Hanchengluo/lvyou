@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="{$config['view_public']}css/user/user_question.css">
+<script type="text/javascript">$("title").html('我的提问');</script>
+
+    <div class="R">
+        <div class="sortMode"><a href="#">我的提问</a></div>
+        <ul class="data_list">
+            <li class="clearfix">
+                <div class="info">
+                    <h3><a href="#">东京迪士尼度假区</a></h3>
+                    <div class="desc">
+                        算是马丘比丘里面的一个代表性建筑了，这个建在一个小型洞穴顶部的神庙是古印加人对天文和建筑学造诣的最佳代表。呈半圆形，由...
+                    </div>
+                    <div class="meta clearfix"><span>2017-05-17 16:31:31</span><span>回复(999)</span></div>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="info">
+                    <h3><a href="#">东京迪士尼度假区</a></h3>
+                    <div class="desc">
+                        算是马丘比丘里面的一个代表性建筑了，这个建在一个小型洞穴顶部的神庙是古印加人对天文和建筑学造诣的最佳代表。呈半圆形，由...
+                    </div>
+                    <div class="meta clearfix"><span>2017-05-17 16:31:31</span><span>回复(999)</span></div>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="info">
+                    <h3><a href="#">东京迪士尼度假区</a></h3>
+                    <div class="desc">
+                        算是马丘比丘里面的一个代表性建筑了，这个建在一个小型洞穴顶部的神庙是古印加人对天文和建筑学造诣的最佳代表。呈半圆形，由...
+                    </div>
+                    <div class="meta clearfix"><span>2017-05-17 16:31:31</span><span>回复(999)</span></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+<script>
+    $(function() {
+        //显示/隐藏 上传图片 按钮
+        $(".u_banner").hover(function(){
+            $("#btn_upload_img").show();
+        },function(){
+            $("#btn_upload_img").hide();
+        });
+        //右侧顶部导航点击
+        $("#nav>li").click(function(){
+            //alert(1);
+            $("#nav>.current").removeClass();
+            $(this).addClass("current");
+        });
+    });
+</script>

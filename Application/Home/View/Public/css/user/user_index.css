@@ -1,0 +1,26 @@
+.user_top{}
+    .u_banner{position: relative;}
+        #btn_upload_img{position: absolute;right: 30px;top: 10px;background-color: rgba(0,0,0,0.4);padding: 5px 20px;
+            border-radius: 4px;color: #fff;cursor: pointer;}
+        #btn_upload_img:hover{background-color: rgba(0,0,0,0.5);}
+.u_info{position: relative;}
+.u_info .u_tx{position: absolute;top: -60px;}
+.u_info .info{margin-left: 140px;}
+.u_info .info>span{margin-right: 20px;line-height: 60px;}
+.u_info .info>a{padding: 5px 10px;background-color: #ff9d00;margin-left: 10px;color: #fff;}
+.u_info .info>a:hover{background-color: #ff8a00;}
+
+.user_c{margin-top: 20px;}
+    .user_c>.L{float: left;width: 270px;}
+        .L .leftNav{width: 260px;background-color: #f8f8f8;}
+        .L .leftNav>li{border-bottom: 1px solid #e5e5e5;}
+        .L .leftNav>li:last-child{border-bottom: 0px solid #ddd;}
+        .L .leftNav>li>a{display: block;line-height: 42px;text-align: center;color: #666;}
+        .L .leftNav>li>a:hover{color: #ff9d00;background-color: #eee;}
+        .L .leftNav .current{border-left: 3px solid #ff8a00;}
+    .user_c>.R{float: right;width: 682px;}
+        #nav{background-color: #fff;padding-left: 20px;}
+        #nav>li{float: left;}
+        #nav a{display:block;padding: 10px 20px;color: #666666;}
+        #nav .current{border-bottom: 3px solid #ff8a00;}
+

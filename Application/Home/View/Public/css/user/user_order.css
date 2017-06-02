@@ -1,0 +1,41 @@
+.user_top{}
+.u_banner{position: relative;}
+#btn_upload_img{position: absolute;right: 30px;top: 10px;background-color: rgba(0,0,0,0.4);padding: 5px 20px;
+    border-radius: 4px;color: #fff;cursor: pointer;}
+#btn_upload_img:hover{background-color: rgba(0,0,0,0.5);}
+.u_info{position: relative;}
+.u_tx{position: absolute;top: -60px;}
+.info{margin-left: 140px;}
+.info>span{margin-right: 20px;line-height: 60px;}
+.info>a{padding: 5px 10px;background-color: #ff9d00;margin-left: 10px;color: #fff;}
+.info>a:hover{background-color: #ff8a00;}
+
+.user_c{margin-top: 20px;}
+.user_c>.L{float: left;width: 270px;}
+.L .leftNav{width: 260px;background-color: #f8f8f8;}
+.L .leftNav>li{border-bottom: 1px solid #e5e5e5;}
+.L .leftNav>li:last-child{border-bottom: 0px solid #ddd;}
+.L .leftNav>li>a{display: block;line-height: 42px;text-align: center;color: #666;}
+.L .leftNav>li>a:hover{color: #ff9d00;background-color: #eee;}
+.L .leftNav .current{border-left: 3px solid #ff8a00;}
+.user_c>.R{float: right;width: 682px;}
+.user_c>.R .sortMode{border-bottom: 1px solid #ddd;}
+.user_c>.R .sortMode a{line-height: 32px;margin: 0 10px;}
+.user_c>.R .sortMode a.current{color: #ff9d00;}
+.R .data_list{margin-top: 10px;}
+.R .data_list>li{margin-bottom:20px;border: 1px solid #ddd;border-radius: 5px;}
+.R .data_list>li>.order_info{line-height: 32px;background-color: #eee;color: #333}
+.R .data_list>li>.order_info>span{margin-right: 20px;margin-left: 10px;font-size: 12px;}
+.R .data_list>li>.order_table{border-collapse: collapse;color: #444;}
+.R .data_list>li>.order_table a{color: #444;}
+.R .data_list>li>.order_table tr{text-align: center;}
+.R .data_list>li>.order_table tr:first-child{border-bottom: 1px solid #ddd;}
+.R .data_list>li>.order_table tr:last-child td{padding: 5px;}
+.R .data_list>li>.order_table tr:first-child td{padding: 5px 0;}
+.R .data_list>li>.order_table tr:last-child td:first-child{}
+.R .data_list>li>.order_table tr:last-child td:first-child>a:hover{text-decoration: underline;}
+.R .data_list>li>.order_table .btn_zf{display: inline-block;background-color: #3f9f5f;line-height: 26px;width:70px;color: #fff;
+    border-radius: 4px;}
+.R .data_list>li>.order_table .btn_zf:hover{background-color:#5cad77;}
+.R .data_list>li>.order_table .btn_ck{line-height: 24px;}
+.R .data_list>li>.order_table .btn_ck:hover{color:#3f9f5f }

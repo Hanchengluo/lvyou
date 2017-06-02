@@ -1,0 +1,135 @@
+<include file="Public/header"/>
+<link rel="stylesheet" href="Public/lib/swiper/swiper-3.3.1.min.css">
+<link rel="stylesheet" href="{$config['view_public']}css/store/store_index.css">
+<script type="text/javascript">$("title").html('商城主页');</script>
+</head>
+<body>
+<include file="Public/top_2"/>
+<!--主体的宽度为1160-->
+    <div class="storeB">
+        <!--顶部搜索和Nav区 start-->
+        <include file="Public/store_top"/>
+        <!--顶部搜索和Nav区 end-->
+        <!--滑动图片和分类列表 start-->
+        <div class="T2">
+            <!--3-->
+            <div>
+                <div class="store-index-container" style="position: relative;overflow: hidden;">
+                    <div class="swiper-wrapper">
+                        <a class="swiper-slide" href="#">
+                            <img src="{$config['view_public']}img/680x400.jpg" style="width: 100%;height: 420px;"/>
+                        </a>
+                        <a class="swiper-slide" href="#">
+                            <img src="{$config['view_public']}img/680x400.jpg" style="width: 100%;height: 420px;"/>
+                        </a>
+                        <a class="swiper-slide" href="#">
+                            <img src="{$config['view_public']}img/680x400.jpg" style="width: 100%;height: 420px;"/>
+                        </a>
+                    </div>
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                </div>
+            </div>
+            <!--3/-->
+            <!--4-->
+            <div class="cate">
+                <div class="w1160">
+                    <ul class="cateList">
+                        <li><h3>国内旅游</h3>
+                            <p><a href="#">三亚</a><a href="#">三亚</a><a href="#">三亚</a><a href="#">三亚</a></p>
+                            <div class="cityList1" hidden="">
+                                <ul class="clearfix">
+                                    <for star="1" end="12" name="i">
+                                    <li><h3>热门</h3>
+                                        <ul class="clearfix" style="padding-left: 38px;">
+                                            <for star="1" end="12" name="j">
+                                            <li style=""><a href="#" style="">庐山</a></li>
+                                            </for>
+                                        </ul>
+                                    </li>
+                                    </for>
+                                </ul>
+                            </div>
+                        </li>
+                        <for star="1" end="6" name="i">
+                        <li>
+                            <h3>东南亚 南亚 泰国</h3>
+                            <p><a href="#">三亚</a><a href="#">三亚</a><a href="#">三亚</a><a href="#">三亚</a></p>
+                            <div class="cityList2" hidden>
+                                <ul>
+                                    <for star="1" end="3" name="j">
+                                    <li>
+                                        <h3>东南亚</h3>
+                                        <ul>
+                                            <for star="1" end="12" name="k">
+                                            <li><a href="#">庐山</a></li>
+                                            </for>
+                                        </ul>
+                                    </li>
+                                    </for>
+                                </ul>
+                            </div>
+                        </li>
+                            </for>
+                    </ul>
+
+                </div>
+            </div>
+            <!--4/-->
+        </div>
+        <!--滑动图片和分类列表 end-->
+        <!--主体内容区 start-->
+        <div class="C" style="background-color: #fff;">
+            <ul class="CT clearfix w1160" style="padding: 20px 0;">
+                <li><img src="{$config['view_public']}img/tx.jpeg" width="275px" height="120px"></li>
+                <li><img src="{$config['view_public']}img/tx.jpeg" width="275px" height="120px"></li>
+                <li><img src="{$config['view_public']}img/tx.jpeg" width="275px" height="120px"></li>
+                <li><img src="{$config['view_public']}img/tx.jpeg" width="275px" height="120px"></li>
+            </ul>
+            <ul class="CC">
+                <for star="1" end="3" name="k">
+                <li>
+                    <div class="w1160">
+                        <div class="clearfix">
+                            <h3>当地玩法</h3>
+                            <ul class="ccNav clearfix">
+                                <li class="current" data-i="1" data-j="{$k+1}">精品小团</li>
+                                <li data-i="2" data-j="{$k+1}">发现城市</li>
+                                <li data-i="3" data-j="{$k+1}">亲子家庭</li>
+                                <li data-i="4" data-j="{$k+1}">情侣蜜月</li>
+                                <li data-i="5" data-j="{$k+1}">血拼购物</li>
+                                <li data-i="6" data-j="{$k+1}">闺蜜同游</li>
+                                <li data-i="7" data-j="{$k+1}">冒险之旅</li>
+                            </ul>
+                        </div>
+                        <ul class="ccShopsList">
+                            <for star="1" end="7" name="j">
+                            <li {$j==0?"":"hidden"}>
+                                <ul class="clearfix">
+                                    <for star="1" end="7" name="i">
+                                    <li>
+                                        <img src="{$config['view_public']}img/tx.jpeg" width="{$i==4?'570px':'275px'}" height="275px">
+                                        <div class="clearfix shopInfo">
+                                            <p class="shopName">出国旅游欧洲10天豪华游豪华游豪华游</p>
+                                            <span class="mnum">￥49999</span>
+                                        </div>
+                                    </li>
+                                    </for>
+                                </ul>
+                            </li>
+                            </for>
+                        </ul>
+                    </div>
+                </li>
+                </for>
+            </ul>
+        </div>
+        <!--主体内容区 end-->
+    </div>
+    <include file="Public/footer"/>
+    <script src="Public/lib/swiper/swiper-3.3.1.min.js"></script>
+    <script src="Public/js/new-swiper.js"></script>
+    <script src="{$config['view_public']}js/store/store_index.js"></script>
+</body>
+</html>

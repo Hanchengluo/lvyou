@@ -1,0 +1,149 @@
+<include file="Public/header"/>
+<link rel="stylesheet" href="{$config['view_public']}css/community/jbtx.css">
+<script type="text/javascript">$("title").html('结伴同行');</script>
+</head>
+<body>
+<include file="Public/top_2"/>
+    <div class="jbtx">
+        <!--顶部滑动图片 start-->
+        <div class="T_img">
+            <img src="{$config['view_public']}img/tx.jpeg" width="100%" height="320px">
+        </div>
+        <!--顶部滑动图片 end-->
+        <!--顶部导航区 start-->
+        <div style="background-color: #efefef;position: relative;">
+            <ul class="T_nav w980 clearfix">
+                <li><a href="#">论坛首页</a></li>
+                <li class="current"><a href="#">结伴同行</a></li>
+                <li class="hasHideB" data-i="1"><a href="javaScript:;">欧洲板块&nbsp;<i class="fa fa-angle-down"></i></a>
+                    <div class="bulge" hidden></div>
+                </li>
+                <li class="hasHideB" data-i="2"><a href="javaScript:;">亚洲板块&nbsp;<i class="fa fa-angle-down"></i></a><div class="bulge" hidden></div></li>
+                <li class="hasHideB" data-i="3"><a href="javaScript:;">美洲板块&nbsp;<i class="fa fa-angle-down"></i></a><div class="bulge" hidden></div></li>
+                <li class="hasHideB" data-i="4"><a href="javaScript:;">大洋洲板块&nbsp;<i class="fa fa-angle-down"></i></a><div class="bulge" hidden></div></li>
+                <li class="hasHideB" data-i="5"><a href="javaScript:;">非洲板块&nbsp;<i class="fa fa-angle-down"></i></a><div class="bulge" hidden></div></li>
+                <li class="hasHideB" data-i="6"><a href="javaScript:;">全部板块&nbsp;<i class="fa fa-angle-down"></i></a><div class="bulge" hidden></div></li>
+            </ul>
+            <ul>
+                <for star="1" end="6" name="i">
+                    <li>
+                        <div class="hideB" data-i="{$i}" hidden>
+                            <ul class="w980 bk_list">
+                                <for star="1" end="5" name="j">
+                                <li>
+                                    <ul class="bk_item">
+                                        <li><a href="#">法国/摩纳哥</a></li>
+                                        <li><a href="#">法国/摩纳哥</a></li>
+                                        <li><a href="#">法国/摩纳哥/摩纳哥</a></li>
+                                    </ul>
+                                </li>
+                                </for>
+                            </ul>
+                        </div>
+                    </li>
+                </for>
+            </ul>
+        </div>
+        <!--顶部导航区 end-->
+        <!--主体区域 1：选择条件块 start-->
+        <div class="selectB w980">
+            <div class="select1"><span>出发时间：</span>
+                <ul class="clearfix">
+                    <li><input type="checkbox">不限</li>
+                    <li><input type="checkbox">5月</li>
+                    <li><input type="checkbox">6月</li>
+                    <li><input type="checkbox">7月</li>
+                    <li><input type="checkbox">8月</li>
+                </ul>
+            </div>
+            <div class="select2 clearfix"><span>目的地：</span>
+                <div style="float: left;">
+                    <div>
+                        <input id="search" type="text">
+                        <a class="icon_search"><i class="fa fa-search"></i></a>
+                    </div>
+                    <div class="tuij">
+                        <span>推荐：</span><a href="#">法国</a><a href="#">挪威</a><a href="#">挪威</a><a href="#">挪威</a><a href="#">挪威</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--主体区域 1：选择条件块 end-->
+        <!--主体区域 2：排序方式和发布结伴btn start-->
+        <div class="sortB">
+            <div class="w980">
+                <div class="L">
+                    <a class="current">最新发布</a><a>最近出发</a>
+                </div>
+                <div class="R">
+                    <a href="#">发布结伴</a>
+                </div>
+            </div>
+        </div>
+        <!--主体区域 2：排序方式和发布结伴btn end-->
+        <!--主体区域 3：内容区 start-->
+        <ul class="itemList w980 clearfix">
+            <for star="1" end="8">
+                <li>
+                    <a href="#">
+                        <img src="{$config['view_public']}img/tx.jpeg" width="230px" height="230px">
+                    </a>
+                    <div class="baseInfo">
+                        <p>
+                            <a><img class="tx" src="{$config['view_public']}img/tx.jpeg" width="40px"></a>
+                            <a>里斯</a>
+                        </p>
+                        <p><span>目的地：</span><strong>印度</strong></p>
+                        <p><span>时间：</span><strong>2017.05.09</strong>-<strong>2017.05.21</strong></p>
+                    </div>
+                </li>
+            </for>
+        </ul>
+        <!--主体区域 3：内容区 end-->
+        <!--主体区域 4：分页区 start-->
+        <div class="pageB">
+            <div class="w980">
+                <div style="float: right;">
+                    <a href="javascript:void(0);">上一页</a>
+                    <span>
+                        <a class="active" href="javascript:void(0);">1</a>
+                        <a href="javascript:void(0);">2</a>
+                        <a href="javascript:void(0);">3</a>
+                        <span>...</span>
+                        <a href="javascript:void(0);">100</a>
+                    </span>
+                    <a href="javascript:void(0);">下一页</a>
+                </div>
+            </div>
+        </div>
+        <!--主体区域 4：分页区 end-->
+
+
+    </div>
+    <include file="Public/footer"/>
+    <script>
+        $(function() {
+            //移动到有hide块的nav上
+            $(".hasHideB").hover(function(){
+                var i=$(this).attr("data-i");
+                $(this).find(".bulge").show();
+                $(".hideB").eq(i-1).show();
+            },function(){
+                var i=$(this).attr("data-i");
+                $(this).find(".bulge").hide();
+                $(".hideB").eq(i-1).hide();
+            });
+            //移动到hide块上
+            $(".hideB").hover(function(){
+                var i=$(this).attr("data-i");
+                $(".bulge").eq(i-1).show();
+                $(this).show();
+            },function(){
+                var i=$(this).attr("data-i");
+                $(".bulge").eq(i-1).hide();
+                $(this).hide();
+            });
+        });
+    </script>
+</body>
+</html>

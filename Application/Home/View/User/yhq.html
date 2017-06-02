@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="{$config['view_public']}css/user/user_yhq.css">
+<script type="text/javascript">$("title").html('优惠券');</script>
+
+    <div class="R">
+        <div class="sortMode"><a class="current" href="#">未使用</a><a href="#">已使用</a><a href="#">已过期</a></div>
+        <ul class="data_list">
+            <li class="clearfix">
+                <a class="pic" href="#"><img src="{$config['view_public']}img/tx.jpeg" width="200" height="180"></a>
+                <div class="info">
+                    <h3>东京迪士尼度假区</h3>
+                    <div class="desc">
+                        <p>满100可抵10元</p>
+                        <p>有效期：2017-09-09</p>
+                    </div>
+                </div>
+            </li>
+            <li class="clearfix">
+                <a class="pic" href="#"><img src="{$config['view_public']}img/tx.jpeg" width="200" height="180"></a>
+                <div class="info">
+                    <h3>东京迪士尼度假区</h3>
+                    <div class="desc">
+                        <p>满100可抵10元</p>
+                        <p>有效期：2017-09-09</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+<script>
+    $(function() {
+        //显示/隐藏 上传图片 按钮
+        $(".u_banner").hover(function(){
+            $("#btn_upload_img").show();
+        },function(){
+            $("#btn_upload_img").hide();
+        });
+        //右侧顶部导航点击
+        $("#nav>li").click(function(){
+            //alert(1);
+            $("#nav>.current").removeClass();
+            $(this).addClass("current");
+        });
+    });
+</script>

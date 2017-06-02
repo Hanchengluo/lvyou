@@ -1,0 +1,46 @@
+body{background-color: #fff;}
+img{vertical-align: bottom;}
+.w980{width: 980px;margin: auto;}
+.mainc{color: #ff9d00;}
+.tx{border-radius: 50%;}
+
+.user_top{}
+.u_banner{position: relative;}
+#btn_upload_img{position: absolute;right: 30px;top: 10px;background-color: rgba(0,0,0,0.4);padding: 5px 20px;
+    border-radius: 4px;color: #fff;cursor: pointer;}
+#btn_upload_img:hover{background-color: rgba(0,0,0,0.5);}
+.u_info{position: relative;}
+.u_tx{position: absolute;top: -60px;}
+.u_info .info{margin-left: 140px;}
+.u_info .info>span{margin-right: 20px;line-height: 60px;}
+.u_info .info>a{padding: 5px 10px;background-color: #ff9d00;margin-left: 10px;color: #fff;}
+.u_info .info>a:hover{background-color: #ff8a00;}
+
+.user_c{margin-top: 20px;}
+.user_c>.L{float: left;width: 270px;}
+.L .leftNav{width: 260px;background-color: #f8f8f8;}
+.L .leftNav>li{border-bottom: 1px solid #e5e5e5;}
+.L .leftNav>li:last-child{border-bottom: 0px solid #ddd;}
+.L .leftNav>li>a{display: block;line-height: 42px;text-align: center;color: #666;}
+.L .leftNav>li>a:hover{color: #ff9d00;background-color: #eee;}
+.L .leftNav .current{border-left: 3px solid #ff8a00;}
+.user_c>.R{float: right;width: 682px;}
+.user_c>.R .sortMode{border-bottom: 1px solid #ddd;}
+.user_c>.R .sortMode a{line-height: 32px;margin: 0 10px;}
+.user_c>.R .sortMode a.current{color: #ff9d00;}
+.R .data_list{margin-top: 10px;}
+.R .data_list>li{padding-bottom:20px;margin-bottom:20px;border-bottom: 1px solid #efefef;}
+.R .data_list>li:last-child{border-bottom: 0px solid #ddd;}
+
+
+/*此为该页所有*/
+.R .data_list h3>a{line-height: 32px;font-size: 16px;font-weight: bold;}
+.R .data_list h3>a:hover{text-decoration: underline;}
+.ty_info{padding: 10px 0px 10px 30px;border: 1px solid #ddd;margin-right: 20px;margin-top: 5px;}
+.ty_info>div:first-child{border-right:1px solid #ddd;float: left;padding-right: 20px;}
+.ty_info>div:last-child{float: right;margin-left: 0px;padding-top: 0px;}
+.R .data_list>li .meta{padding-right: 20px;line-height: 32px;padding-top: 10px;}
+.R .data_list>li .meta>span{float: right;margin-right: 30px;color: #999;}
+.R .data_list>li .meta>a{float: right;padding:0 20px;background-color: #3f9f5f;color: #fff;}
+.R .data_list>li .meta>a:hover{background-color: #5cad77;}
+

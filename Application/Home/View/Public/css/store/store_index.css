@@ -1,0 +1,58 @@
+body{background-color: #efefef;}
+img{vertical-align: bottom;}
+.w1160{width: 1160px;margin: auto;}
+.tx{border-radius: 50%;}
+.btn-def>a{display: inline-block;;padding: 0 20px;background-color: #ff9d00;color: #fff;line-height: 32px;border-radius: 4px;}
+.btn-def a:hover{background-color: #ff8a00;}
+
+    .storeB .T2{position: relative;}
+        .T2 a:hover{color: #ff9d00;text-decoration: underline;}
+        .T2 .slideImg{}
+        .T2 .cate{position: absolute;top: 0px;width: 100%;z-index: 9;}
+        .T2 .cateList{position: relative;}
+        .T2 .cateList{width: 280px;height: 412px;padding: 4px 0;background: rgba(0,0,0,0.7);}
+        .T2 .cateList>li{height: 53px;border-bottom: 1px solid hsla(0,0%,100%,.1);padding: 5px 0 0 20px;}
+        .T2 .cateList>li:last-child{border-bottom: 0px solid hsla(0,0%,100%,.1);}
+        .T2 .cateList>li:hover{background-color: #fff;}
+        .T2 .cateList>li>h3{color: #fff;font-weight: normal;font-size: 16px;}
+        .T2 .cateList>li>p>a{color: #aaa;font-size: 12px;}
+        .T2 .cateList>li:hover>h3{color: #000;}
+        .T2 .cateList>li:hover a:hover{color: #ff9d00;}
+        .T2 .cateList>li>h3{font-size: 16px;}
+        .T2 .cateList>li>p{padding-top: 4px;}
+        .T2 .cateList>li>p>a{margin-right:10px; }
+
+            .cityList1,.cityList2{padding:20px 10px;width: 680px;height: 372px;position:absolute;background-color: #fff;top: 4px;left: 280px;box-shadow: 5px 5px 5px rgba(0,0,0,.6);}
+            .cityList1 h3{color: #000;float: left;padding-right: 10px;line-height: 12px;}
+            .cityList1>ul>li{width: 340px;margin-bottom:10px;float: left; }
+            .cityList1>ul ul>li{margin-bottom:5px;float: left;padding:0 5px;border-right: 1px solid #ddd;line-height: 12px;}
+            .cityList1>ul ul>li>a{color: #000;font-size:12px;}
+            .cityList1>ul ul>li>a:hover{color: #ff9d00;}
+
+            .cityList2 h3{color: #000;border-bottom: 1px solid #ddd;line-height: 38px;
+                font-size: 18px;}
+            .cityList2>ul>li{width: 320px;margin-bottom:10px;float: left;margin: 0px 10px;margin-bottom: 20px;}
+            .cityList2>ul ul>li{margin-top:8px;float: left;padding:0 5px;border-right: 1px solid #ddd;line-height: 12px;}
+    .C{}
+        .C .CT{}
+        .C .CT>li{float: left;margin-left: 20px;cursor: pointer;}
+        .C .CT>li:first-child{margin-left: 0px}
+        .C .CC{}
+        .C .CC>li{padding: 20px 0 40px 0;}
+        .C .CC>li:nth-child(2n+1){background-color: #efefef;}
+        .C .CC>li:nth-child(2n+2){background-color: #fff;}
+        .CC h3{float: left;line-height: 42px;font-size: 23px;}
+        .ccNav{float: right;padding-top: 10px;}
+        .ccNav li{float: left;cursor: pointer;}
+        .ccNav li{line-height: 32px;margin:0px 15px;border-bottom:2px solid rgba(255,255,255,0);}
+        .ccNav li.current{border-bottom: 2px solid #ff9d00;color: #ff9d00;}
+        .ccShopsList ul>li{width: 275px;position: relative;float: left;margin-left: 20px;margin-top: 20px;cursor: pointer;}
+        .ccShopsList ul>li:nth-child(5){width: 570px;}
+        .ccShopsList ul>li:nth-child(4n+1){margin-left: 0px;}
+        .ccShopsList ul>li>.shopInfo{position: absolute;bottom: 0px;background-color: rgba(0,0,0,.6);width: 100%;}
+        .ccShopsList .shopName{font-size: 18px;color: #fff;padding: 0px 5px;}
+        .ccShopsList .mnum{font-size: 18px;float: right;background-color: #ff7466;color: #fff;}
+
+.icon_search{font-size: 16px;position: relative;left: -26px;color: #999;cursor: pointer;}
+
+

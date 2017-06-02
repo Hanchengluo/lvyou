@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="{$config['view_public']}css/store/store_top.css">
+<div class="T">
+    <!--1-->
+    <div class="searchB w1160 clearfix">
+        <div class="start" ><span id="startCityName" style="font-size: 16px;">深圳</span>&nbsp;<span>出发</span></div>
+        <div class="end"><span id="endCityName" style="font-size: 16px;">深圳</span>&nbsp;<span>目的地</span></div>
+        <div class="searchInput"><input type="text"><a class="icon_search"><i class="fa fa-search"></i></a></div>
+        <!--选择出发地的块 start-->
+        <div class="selectPlace" data-i="0" hidden>
+            <div style="padding: 20px;border-bottom:1px solid #ececec; ">
+                <p style="color: #999;">热门出发地</p>
+                <ul class="hotList clearfix">
+                    <!--北京 天津天津 上海 杭州 广州 深圳 成都 重庆 昆明 武汉 西安 香港 澳门-->
+                    <li><a >全国</a></li>
+                    <for star="1" end="2">
+                        <li><a >北京</a></li>
+                    </for>
+                </ul>
+            </div>
+            <div style="">
+                <div class="selectInput"><input type="text" placeholder="查找"></div>
+                <ul class="zmNav clearfix">
+                    <li class="current" data-i="1">ABCDEF</li>
+                    <li data-i="2">GHJKLM</li>
+                    <li data-i="3">NPQRS</li>
+                    <li data-i="4">TWXYZ</li>
+                </ul>
+                <for star="1" end="4" name="i">
+                    <ul class="zmList" {$i==0?'':'hidden'}>
+                        <for star="1" end="6" name="j">
+                            <li>
+                                <span class="letter">A</span>
+                                <ul class="clearfix">
+                                    <for star="1" end="3" name="k">
+                                        <li><a>深圳</a></li>
+                                    </for>
+                                </ul>
+                            </li>
+                        </for>
+                    </ul>
+                </for>
+            </div>
+        </div>
+        <!--选择出发地的块 end-->
+        <div></div>
+    </div>
+    <!--1/-->
+    <!--2-->
+    <ul class="Nav clearfix w1160">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">机加酒</a></li>
+        <li><a href="#">出境游</a></li>
+        <li><a href="#">国内游</a></li>
+        <li><a href="#">签证</a></li>
+        <li><a href="#">邮轮</a></li>
+        <li><a href="#">海岛游</a></li>
+        <li><a href="#">酒店</a></li>
+        <li><a href="#">周边游</a></li>
+        <li><a href="#">旅游保险</a></li>
+    </ul>
+    <!--2/-->
+</div>
+<script src="{$config['view_public']}js/store/store_top.js"></script>

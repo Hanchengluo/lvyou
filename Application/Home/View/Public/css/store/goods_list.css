@@ -1,0 +1,30 @@
+body{background-color: #efefef;}
+.btn-def>a{display: inline-block;;padding: 0 20px;background-color: #ff9d00;color: #fff;line-height: 32px;border-radius: 4px;}
+.btn-def a:hover{background-color: #ff8a00;}
+
+    .T2{}
+        .filtrate{padding: 0 20px 20px 20px;}
+        .filtrate>li{padding-top: 20px;}
+        .filtrate>li li{float: left;margin-right: 40px;line-height: 13px;height:14px;vertical-align: top;}
+        .filtrate>li li input{font-size: 14px;height: 14px;width: 14px;margin-right: 5px;}
+        .filtrate>li>span{display: inline-block;float: left;width: 100px;line-height: 13px;}
+    .goodsListB{}
+        .sortnav{}
+        .sortnav>li{float: left;margin-right: 20px;}
+        .sortnav>li:hover a{color: #ff9d00;}
+        .sortnav>li.current a{color: #ff9d00;}
+        .goodsList>li{width: 275px;float: left;margin-left: 20px;margin-top: 20px;cursor: pointer;}
+        .goodsList>li:nth-child(4n+1){margin-left: 0px;}
+        .goodsList>li>.shopInfo{background-color: #fff;width: 273px;border: 1px solid #bbb;border-top: 0px solid #bbb;}
+        .goodsList .shopName{font-size: 18px;padding: 0px 5px;}
+        .goodsList .price{height: 42px;}
+        .goodsList .mnum{font-size: 18px;padding-left: 5px;line-height: 42px;}
+        .goodsList .btn{display:inline-block;background-color: #ff7466;font-size: 16px;
+            color: #fff;padding: 0 20px;float: right;line-height: 32px;margin-top: 5px;
+            margin-right: 10px;}
+        .goodsList .btn:hover{background-color: #ff8f81}
+
+
+.icon_search{font-size: 16px;position: relative;left: -26px;color: #999;cursor: pointer;}
+
+

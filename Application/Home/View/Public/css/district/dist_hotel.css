@@ -1,0 +1,20 @@
+.C{margin-top: 20px;}
+.C .L{float: left;width: 680px;}
+.C .L .sortMode{border-bottom: 1px solid #ddd;}
+.C .L .sortMode a{line-height: 32px;margin: 0 10px;}
+.C .L .sortMode a.current{color: #ff9d00;}
+.C .L .travelList{margin-top: 10px;}
+.C .L .travelList>li{padding-bottom:20px;margin-bottom:20px;border-bottom: 1px solid #efefef;}
+.C .L .travelList>li:last-child{border-bottom: 0px solid #ddd;}
+.C .L .travelList .pic{float: left;}
+.C .L .travelList .info{margin-left: 242px;}
+.C .L .travelList .info>h3{line-height: 32px;font-size: 16px;}
+.C .L .travelList .info>h3 a{line-height: 32px;font-size: 16px;}
+.C .L .travelList .info>h3 span{line-height: 32px;font-size: 16px;color: #999;}
+.C .L .travelList .info>h3 a:hover{text-decoration: underline;}
+.C .L .travelList .desc{padding-top: 10px;color: #666;min-height: 76px;}
+.C .L .travelList .price{text-align: right;line-height: 32px;padding-right: 5px;color: #ff7466;}
+
+.C .R{float: right;width: 270px;}
+
+

@@ -1,0 +1,21 @@
+.generalize_C{margin-top: 20px;}
+    .generalize_C .L{float: left;width: 270px;}
+    .generalize_C .L .catalog{border: 1px solid #ddd;overflow-y: auto;cursor: pointer;width: 268px;
+        position: fixed;bottom: 0px;top: 210px;background-color: #fbfbfb;}
+    .generalize_C .L .catalog *{font-size: 16px;color: #555;}
+    .generalize_C .L .catalog a{}
+    .generalize_C .L .catalog a:hover{color: #ff9d00;}
+    .generalize_C .L .catalog>dl{padding-top: 5px;padding-bottom:5px;border-bottom: 1px solid #eee;}
+    .generalize_C .L .catalog>dl:hover{background-color: #fff;}
+    .generalize_C .L .catalog dt{line-height: 32px;font-weight: bold;padding-left: 20px;}
+    .generalize_C .L .catalog dd{line-height: 24px;padding-left: 34px;}
+
+    .generalize_C .R{float: right;width: 680px;color: #666;}
+    .generalize_C .R h2{line-height: 38px;font-size: 26px;font-weight: normal;color: #333;}
+    .generalize_C .R h3{line-height: 24px;font-size: 21px;font-weight: normal;border-left: 5px solid #ff9d00;
+        padding-left: 7px;margin: 7px 0;color: #333;}
+    .generalize_C .R h2 a{line-height: 38px;font-size: 26px;font-weight: normal;color: #333;}
+    .generalize_C .R h3 a{line-height: 24px;font-size: 21px;font-weight: normal;color: #333;}
+        .g_content>li>ul>li{padding-bottom: 20px;margin-bottom: 20px;border-bottom: 1px solid #ddd;}
+
+

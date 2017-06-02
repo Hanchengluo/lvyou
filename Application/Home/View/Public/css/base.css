@@ -1,0 +1,37 @@
+*{font-family: "Microsoft YaHei";font-size:14px;margin: 0px;padding: 0px;}
+li{list-style: none;}
+a{text-decoration: none;color: #000000;cursor: pointer;}
+a:hover{text-decoration: none;color: #000000;}
+/*解决img标签底部多余空白*/
+img{vertical-align: bottom;}
+/*清除浮动*/
+.clearfix:after {
+    content: '';
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    display: block;
+}
+/*钱颜色*/
+.mc{color: #ff7466;}
+/*价钱*/
+.mnum{color: #ff7466;font-size: 18px;font-weight: bold;}
+
+/*颜色*/
+.c-999{color: #999;}
+.mainc{color: #ff9d00;}
+.mainc-hover{color:#ff8a00;}
+
+/*宽度*/
+.w340{width: 340px;margin: 0 auto;}
+.w600{width: 600px;margin: auto;}
+.w680{width: 680px;margin: auto;}
+.w980{width: 980px;margin: auto;}
+.w1080{width: 1080px;margin: auto;}
+.w1160{width: 1160px;margin: auto;}
+
+/*头像圆形*/
+.tx{border-radius: 50%;}
+
+
+

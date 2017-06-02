@@ -1,0 +1,75 @@
+    <style>
+        .w1200{width: 1080px;margin: 0 auto;}
+        .top{}
+            #logo{float: left;}
+            .top .nav{margin-left: 20px;float: left;}
+            .top .nav>li{float: left;line-height: 58px;height: 58px;}
+            .top .nav>li.current{background-color: #ff9d00;border-bottom: 2px solid #ff9d00;}
+            .top .nav>li a{display: block;padding: 0 20px;}
+            .top .nav>li.current a{color: #fff;}
+            .top .nav>li:hover{border-bottom: 2px solid #ff9d00;}
+            .top .nav>li:hover a{color: #ff9d00;}
+            .top .nav>.current:hover a{color: #fff;}
+            .top .r{float: right;}
+            .top .r>span{line-height: 30px;font-size: 16px;}
+        .index-swiper-container{position: relative;overflow: hidden;}
+        .searchB{position: absolute;width: 500px;height: 80px;border-radius: 10px;margin-left: -250px;margin-top: -40px;
+            left: 50%;top: 70%;background-color: rgba(0,0,0,.7);z-index: 10;}
+        .searchB>input{height: 28px;line-height: 28px;padding-left: 4px;
+            color: #666;border-radius: 4px;outline: none;width: 396px;border: 1px solid #efefef;background-color:#efefef;
+            margin: 20px 0 0 20px;}
+        .icon_search{font-size: 16px;position: relative;left: -26px;color: #999;cursor: pointer;}
+    </style>
+</head>
+<body>
+    <!--主页顶部 start-->
+        <!--1-->
+        <div class="top">
+            <div class="w1200 clearfix">
+                <div id="logo">
+                    <a href="#"><img src="../img/tx.jpeg" width="120" height="60"></a>
+                </div>
+                <ul class="nav clearfix">
+                    <li class="current"><a href="#">首页</a></li>
+                    <li><a href="#">目的地</a></li>
+                    <li><a href="#">商城</a></li>
+                    <li><a href="#">酒店</a></li>
+                    <li><a href="#">户外出行</a></li>
+                    <li><a href="#">部落</a></li>
+                    <li><a href="#">攻略</a></li>
+                    <li><a href="#">游记</a></li>
+                    <li><a href="#">APP</a></li>
+                </ul>
+                <div class="r">
+                    <span><i class="fa fa-phone"></i>&nbsp;400-123-123</span><br>
+                    <span><i class="fa fa-user"></i>&nbsp;在线客服</span>
+                </div>
+            </div>
+        </div>
+        <!--1/-->
+        <!--2-->
+        <div style="position: relative;">
+            <div class="index-swiper-container">
+                <div class="swiper-wrapper">
+                    <a class="swiper-slide" href="#">
+                        <img src="https://c1-q.mafengwo.net/s10/M00/2F/3E/wKgBZ1kcHUmADcCVAAeGGrXSdYM45.jpeg?imageMogr2%2Finterlace%2F1" style="width: 100%;height: 500px;"/>
+                    </a>
+                    <a class="swiper-slide" href="#">
+                        <img src="https://c1-q.mafengwo.net/s10/M00/2F/3E/wKgBZ1kcHUmADcCVAAeGGrXSdYM45.jpeg?imageMogr2%2Finterlace%2F1" style="width: 100%;height: 500px;"/>
+                    </a>
+                    <a class="swiper-slide" href="#">
+                        <img src="https://c1-q.mafengwo.net/s10/M00/2F/3E/wKgBZ1kcHUmADcCVAAeGGrXSdYM45.jpeg?imageMogr2%2Finterlace%2F1" style="width: 100%;height: 500px;"/>
+                    </a>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="searchB">
+                <input>
+                <a class="icon_search"><i class="fa fa-search"></i></a>
+            </div>
+        </div>
+        <!--2/-->
+    <!--主页顶部 end-->
+    <script src="../lib/jquery-3.2.1.min.js"></script>
+    <script src="../lib/swiper/swiper-3.3.1.min.js"></script>
+    <script src="../js/new-swiper.js"></script>

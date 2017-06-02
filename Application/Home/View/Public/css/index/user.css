@@ -1,0 +1,26 @@
+body{background-color: #efefef;}
+#left{float: left;width: 280px;}
+#left1{background-color: #ffffff;padding-top: 10px;}
+#tx{width: 120px;margin: 0 auto;}
+#tx>img{border-radius: 50%;}
+#name{font-size: 22px;line-height: 24px;margin: 12px 0;color: #666666;text-align: center;}
+#btn{width:180px;height:40px;margin: 0 auto 12px auto;}
+#btn>div{float: left;width: 80px;height: 40px;background-color: #efefef;border-radius: 4px;text-align: center;line-height: 40px;color: #666;cursor: pointer;}
+#btn>div:hover{color: #fff;background-color: #ff8a00;}
+#num{border-top:#e2e2e2 1px solid;border-bottom: #e2e2e2 1px solid;}
+#num>div{float: left;width: 139px;height: 40px;text-align: center;color: #666;padding: 10px 0px;}
+#num>div:first-child{border-right: #e2e2e2 1px solid;}
+#num a{color: #666;}
+#num a:hover{text-decoration: underline;}
+#left2{background-color: #ffffff;margin-top: 12px;}
+.title{text-align: center;padding-top: 12px;}
+.txlist{padding: 8px;}
+.txlist>li{float: left;margin:3px 3px;}
+.txlist>li>img{border-radius: 50%;width: 60px;height: 60px;}
+#left3{background-color: #ffffff;margin-top: 12px;}
+#right{float: left;width:700px;}
+#nav{background-color: #ffffff;border-left: #e2e2e2 1px solid;padding-left: 20px;
+    box-shadow:0 2px 1px rgba(0,0,0,0.12);}
+#nav>li{float: left;}
+#nav a{display:block;padding: 10px 20px;color: #666666;}
+#nav>li.current{border-bottom: 3px solid #ff8a00;}

@@ -1,0 +1,44 @@
+body{background-color: #efefef;}
+
+/*该页新加*/
+.comment_mate i.fa-star{color: #ff9d00;font-size: 20px;}
+
+.commentList{color: #444;}
+.commentList>li{border-top:1px solid #f5f5f5;padding-top: 20px;padding-bottom: 20px;}
+.commentList>li:first-child{border-top:0px solid #f5f5f5;}
+.commentList>li>a{float: left}
+.commentList>li>div{margin-left: 80px;}
+.commentList h3>a{font-size: 16px;line-height: 24px;}
+.commentList h3>a:hover{text-decoration: underline;}
+.comment_mate>span{color: #999;font-size: 12px;display: inline-block;margin-left: 30px;}
+.comment_mate a{color: #999;font-size: 12px;}
+.comment_mate a:hover{color: #ff9d00;text-decoration: underline}
+.comment_content{margin-top: 12px;}
+
+/*该页新加*/
+.reply{background-color: #efefef;padding: 10px;margin-top: 10px;}
+.reply{position: relative;}
+.reply:before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid rgba(239,239,239,1);
+    border-top: 8px solid rgba(239,239,239,0);
+    border-left: 8px solid rgba(239,239,239,0);
+    border-right: 8px solid rgba(239,239,239,0);
+    position: absolute;
+    top: -16px;
+    left: 40px;}
+.reply>a{float: left}
+.reply>div{margin-left: 80px;}
+
+/*写评论*/
+#comment{margin-top: 50px;}
+#comment>a{float: left;}
+#comment>div{margin-left: 80px;padding: 10px;border:1px solid #e5e5e5;border-radius: 5px;background-color: rgba(255,255,255,0.5);}
+#comment>div>div:first-child{padding: 5px;border:1px solid #e5e5e5;border-radius: 5px;}
+#comment textarea{width: 100%;height: 180px;resize: none;color: #666;line-height: 22px;outline: 0px;font-size: 12px;border: 0px;}
+#comment #btn_sub{float: right;width: 120px;height: 40px;background-color: #ff9d00;border-radius: 4px;text-align: center;line-height: 40px;cursor: pointer;color: #fff;margin-top: 10px;}
+#comment #btn_sub:hover{background-color: #ff8a00;}
+#commentStar{float: left;margin-top: 10px;color: #999;line-height: 40px;}
+#commentStar i.fa{color: #999;}

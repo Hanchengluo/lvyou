@@ -1,0 +1,83 @@
+.btn-def>a{display: inline-block;width: 100%;text-align:center;background-color: #3ba5e2;
+    color: #fff;line-height: 48px;border-radius: 4px;}
+.btn-def a:hover{background-color: #1c95dd;}
+    .commC{padding-top: 20px;}
+        .commC .L{float: left;width: 680px;}
+            .L .Nav>li{float: left;width: 33.3%;text-align: center;cursor: pointer;}
+            .L .Nav>li a{display: block;line-height: 48px;padding:0px 15px;
+                border-bottom:2px solid #ddd;font-size: 16px;}
+            .L .Nav>li.current a{border-bottom: 2px solid #ff9d00;}
+
+            #bmlb{margin-top: 20px;}
+            #bmlb>li{margin-bottom: 20px;}
+            #bmlb h3{font-size: 18px;font-weight: normal;color: #444;}
+            .bmList>li{float: left;margin-top: 12px;width: 220px;overflow: hidden;height: 60px;}
+            .bmList>li>a{float: left;margin-right: 10px;}
+            .bmList>li>div{padding-top: 0px;}
+            .bmList>li>div>a{font-size: 16px;color: #444;}
+            .bmList>li>div>a:hover{color: #ff9d00;}
+            .bmList>li>div>p{color: #999;}
+
+        .commC .R{float: left;width: 270px;margin-left: 30px;}
+            .R .userB{border: 1px solid #ddd;margin-top: 20px;}
+                .userB .B1{padding: 20px 0 10px 20px;border-bottom: 1px solid #ddd;}
+                    .userB .B1>a{float: left;}
+                    .userB .B1>div{margin-left: 90px;padding-top: 5px;}
+                    .userB .B1>div a.uname{font-size: 16px;}
+                    .userB .B1>div a.uname:hover{color: #ff9d00;}
+                    .userB .zan{margin-top: 8px;}
+                    .userB .zan span{display: inline-block;background-color: #ff9d00;color: #fff;
+                        line-height: 24px;padding: 0 5px;border-radius: 4px;margin-right: 5px;
+                        cursor: pointer;font-size: 12px;}
+                .userB .B2{}
+                .userB .B2>li{float: left;cursor: pointer;padding: 10px 0;border-bottom: 1px solid #ddd;}
+                    .B2 span{display:block;width: 134px;text-align: center;line-height: 26px;font-size: 16px;color: #999;}
+                    .B2 li:first-child span{border-right: 1px solid #ddd;width: 133px;}
+                    .B2 li.current{border-bottom: 1px solid #ff9d00;}
+                    .B2 li.current span{color: #ff9d00;}
+                .userB .wo{padding: 20px 0 20px 30px;}
+                .userB .wo *{color: #999;}
+                .userB .wo li{padding: 8px 0;}
+                .userB .wo li>a:hover{color: #ff9d00;}
+                .userB .wo li>span{display: inline-block;background-color: #eee;color: #fff;
+                    margin-left: 6px;padding: 0 8px;border-radius: 100px;}
+                .userB .his{padding: 20px 0 20px 20px;}
+                .userB .his *{color: #999;}
+                .userB .his li{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 242px;}
+                .userB .his li>a:hover{color: #ff9d00;}
+            .R .commActivity{}
+                .commActivity>div{margin: 20px 0 10px 0;}
+                .commActivity .activityList{}
+                .commActivity .activityList>li{margin-bottom: 5px;}
+
+    .issue{position: fixed;background-color: rgba(221,221,221,0.9);left: 0px;top: 0px;width: 100%;height: 100%;z-index: 100;}
+        .issueList{background-color: #fff;}
+        .issueB{position: absolute;margin-top: -50px;margin-left: -400px;left: 50%;top: 40%;}
+            .issueList>li{float: left;border-left:1px solid rgba(221,221,221,0.9);border-right:1px solid rgba(221,221,221,0.9); }
+            .issueList>li a{font-size: 18px;display: block;text-align: center;line-height: 140px;height: 140px;width: 160px;}
+            .issueList>li a:hover{color: #ff9d00;}
+            .issueB .clearIcon{position: absolute;right: -8px;top: -8px;cursor: pointer;}
+            .issueB .clearIcon i{color: #999;font-size: 20px;}
+            .issueB .clearIcon:hover i{color: #888;}
+
+
+
+
+/*此样式包含该页特有样式*/
+.commentList{color: #444;}
+.commentList>li{border-top:1px solid #f5f5f5;padding-top: 20px;padding-bottom: 20px;}
+.commentList>li:first-child{border-top:0px solid #f5f5f5;}
+.commentList>li>a{float: left}
+.commentList>li>div{margin-left: 20px;}
+.commentList h3>a{font-size: 16px;line-height: 24px;}
+.commentList h3>a:hover{text-decoration: underline;}
+.comment_mate{color: #999;}
+.comment_mate>span{color: #999;font-size: 14px;display: inline-block;margin-left: 30px;}
+.comment_mate a{color: #999;font-size: 14px;}
+.comment_mate a:hover{color: #ff9d00;text-decoration: underline}
+.comment_content{margin-top: 12px;}
+
+/*同游信息*/
+.ty_info{padding: 10px 0px 10px 30px;border: 1px solid #ddd;margin-right: 20px;margin-top: 5px;}
+.ty_info>div:first-child{border-right:1px solid #ddd;float: left;padding-right: 20px;}
+.ty_info>div:last-child{float: right;margin-left: 0px;padding-top: 0px;}

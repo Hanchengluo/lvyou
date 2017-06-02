@@ -1,0 +1,146 @@
+<include file="Public/header"/>
+<link rel="stylesheet" href="Public/lib/swiper/swiper-3.3.1.min.css">
+<link rel="stylesheet" href="{$config['view_public']}css/district/dist_city.css">
+<script type="text/javascript">$("title").html('目的地城市');</script>
+</head>
+<body>
+    <include file="Public/top_2"/>
+    <!--目的地顶部 start-->
+    <include file="Public/dist_top"/>
+    <!--目的地顶部 end-->
+    <!--介绍块 start-->
+    <div id="place_jies">
+        <!--3-->
+        <div class="plcJieS w980 clearfix">
+            <div class="L">
+                <div class="place-details-container">
+                    <div class="swiper-wrapper">
+                        <a class="swiper-slide" href="#">
+                            <img src="{$config['view_public']}img/680x400.jpg" style="width: 680px;height: 400px;"/>
+                        </a>
+                        <a class="swiper-slide" href="#">
+                            <img src="{$config['view_public']}img/680x400.jpg" style="width: 680px;height: 400px;"/>
+                        </a>
+                        <a class="swiper-slide" href="#">
+                            <img src="{$config['view_public']}img/680x400.jpg" style="width: 680px;height: 400px;"/>
+                        </a>
+                    </div>
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                </div>
+            </div>
+            <div class="R">
+                <div class="plcJiny">
+                    <p>城市经验</p>
+                    <p>avoir_ici：远看很美，近看很破的著名的五渔村！倒是火车经过的热那亚，让人很是向往</p>
+                    <div>
+                        <a href="#">全部城市经验</a>
+                        <a href="#" style="float: right">分享我的城市经验</a>
+                    </div>
+                </div>
+                <div class="plcJinn">
+                    <p>游记锦囊</p>
+                    <div style="padding-left: 10px;">
+                        <img width="68px" height="98px" src="{$config['view_public']}img/tx.jpeg">
+                        <div style="float: right;width: 190px;">
+                            <div><a href="#">意大利国家概览</a></div>
+                            <p>作者：xxx</p>
+                            <p>下载次数：261531</p>
+                            <div id="btn_download">下载</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--3/-->
+    </div>
+    <!--介绍块 end-->
+    <!--推荐块 start-->
+    <div id="place_tuij">
+        <!--4-->
+        <div class="plcTuiJ w980">
+            <div class="T clearfix">
+                <h2 style="text-align: center;font-size: 34px;color: #666;">xxx热门目的地</h2>
+                <ul class="tuijNav clearfix">
+                    <li class="current" data-i="1"><a href="#">最受欢迎</a></li>
+                    <li data-i="2"><a href="#">景点</a></li>
+                    <li data-i="3"><a href="#">活动</a></li>
+                </ul>
+                <ul id="tuij_list">
+                    <for start="1" end="4" name="i">
+                        <li {$i>1?"hidden":""}>
+                            <div class="tuijList">
+                                <ul class="clearfix">
+                                        <for start="1" end="9" name="j">
+                                        <li style="width: 227px;">
+                                            <div><a href="#"><img src="{$config['view_public']}img/tx.jpeg" width="227px" height="150px"></a></div>
+                                            <div class="item_info" style="padding:5px 10px 10px 10px;border: 1px solid #f5f5f5">
+                                                <h3><a href="#">城山日出峰{$i},{$j}</a></h3>
+                                                <div class="clearfix">
+                                                    <div style="float: left;color: #ff9d00;"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>&nbsp;<span>8.0</span></div>
+                                                    <span style="color: #999;float: right;">35人点评</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        </for>
+                                </ul>
+                            </div>
+                        </li>
+                    </for>
+                </ul>
+            </div>
+        </div>
+        <!--4/-->
+    </div>
+    <!--推荐块 end-->
+    <!--交流区 start-->
+    <div id="place_jiaol">
+        <div class="plcJiaoL w980">
+            <h2 style="text-align: center;font-size: 34px;color: #666;">交流区</h2>
+            <div style="margin-top: 20px;" class="clearfix">
+                <div style="float:left;width: 680px">
+                    <ul class="jiaolNav clearfix">
+                        <li class="current" id="jiaol_yjgl"><a>游记攻略</a></li>
+                        <li id="jiaol_wd"><a>问答</a></li>
+                        <li id="jiaol_jb"><a>结伴</a></li>
+                        <li id="jiaol_dp"><a>点评</a></li>
+                    </ul>
+                    <div class="jiaol_main" style="margin-top: 20px;">
+                        <div class="option" id="option">
+                            <span class="current">热门</span>
+                            <span>最新</span>
+                            <span>精华</span>
+                        </div>
+                        <div id="loading" style="text-align: center;margin-top: 20px;" hidden><img src="Public/img/loading.gif"></div>
+                        <ul class="glList" id="glList">
+
+                        </ul>
+                    </div>
+                </div>
+                <div style="float:right;width: 270px">
+                    <ul class="toolBtnList clearfix">
+                        <li><a href="#" class="tb1">提问</a></li>
+                        <li><a href="#" class="tb2">写点评</a></li>
+                        <li><a href="#" class="tb3">写新贴</a></li>
+                    </ul>
+                    <ul class="dpTop5" style="margin-top:40px;">
+                        <li style="font-size: 16px;line-height: 32px;">济州岛点评TOP5</li>
+                        <for start="1" end="6">
+                            <li class="clearfix"><a href="#"><img class="tx" src="{$config['view_public']}img/tx.jpeg" width="60px"></a>
+                                <p><a href="#">xiaom</a></p>
+                                <p>点评了5个目的地</p>
+                            </li>
+                        </for>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--交流区 end-->
+    <include file="Public/footer"/>
+    <script src="Public/lib/swiper/swiper-3.3.1.min.js"></script>
+    <script src="Public/js/new-swiper.js"></script>
+    <script src="{$config['view_public']}js/district/dist_city.js"></script>
+</body>
+</html>

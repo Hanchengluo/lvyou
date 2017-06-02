@@ -1,0 +1,29 @@
+h1{font-size: 23px;font-weight: normal;}
+
+.backB{line-height: 42px;padding: 0 0 0 50px;}
+.backB a{display:inline-block;width:30px;height:30px;line-height:30px;font-size: 18px;text-align: center;
+    cursor: pointer;font-size: 18px;}
+.backB a:hover{background-color: #eee;}
+
+.C{}
+    .c_b1{border: 1px solid #ddd;padding: 20px;border-radius: 5px;}
+    .c_b1 span{font-size: 26px;font-weight: 400;line-height: 32px;}
+    .c_b1 span.hint{font-size: 12px;line-height: 32px;padding-left: 10px;color: #ff0000}
+    .c_b1 a{float: right;line-height: 32px;background-color: #3f9f5f;padding: 0 20px;color: #fff;border-radius: 5px;}
+    .c_b1 a:hover{background-color: #5cad77;}
+    .c_b2{margin-top: 10px;}
+    .c_b2 h3{line-height: 32px;font-weight: normal;font-size: 16px;}
+    .c_b2 .order_info{border-top: 3px solid #ddd;padding-top: 5px;}
+    .c_b2 .order_info>p.order_no{font-size: 21px;font-weight: bold;line-height: 32px;}
+    .c_b2 .order_info>p.order_name{font-size: 16px;line-height: 26px;}
+    .c_b2 .order_info>.order_meta{margin-top: 10px;}
+    .c_b2 .order_info>.order_meta>img{float: left;}
+    .c_b2 .order_info>.order_meta>div{margin-left: 240px;min-height: 140px;}
+    .c_b2 .order_info>.order_meta>div>p{line-height: 32px;}
+    .c_b2 .order_info>.order_meta>div>p.mnum{text-align: right;font-size: 23px;}
+    .c_b3{margin-top:20px;border: 1px solid #ddd;padding: 10px;}
+    .c_b3>h3{font-size: 21px;font-weight: bold;line-height: 32px;}
+    .c_b3>.lkInfoB{padding-left: 10px;margin-bottom: 10px;}
+    .infoList>li{float: left;width: 25%;padding-top: 8px;margin-bottom:7px;}
+    .infoList>li:nth-child(n+5){border-top: 1px solid #ddd;}
+    .infoList>li>p{text-align: center;line-height: 32px;color: #666;}

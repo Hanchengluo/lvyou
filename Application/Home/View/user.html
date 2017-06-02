@@ -1,0 +1,105 @@
+<include file="Public/header"/>
+<link rel="stylesheet" href="{$config['view_public']}css/index/user.css">
+</head>
+<body>
+<include file="Public/top_2"/>
+    <div><img src="{$config['view_public']}img/tx.jpeg" width="100%" height="380"></div>
+    <div id="center" class="w980 clearfix">
+        <div id="left">
+            <div id="left1">
+                <div id="tx">
+                    <img src="{$config['view_public']}img/tx.jpeg">
+                </div>
+                <div id="name">小明</div>
+                <div id="btn">
+                    <div style="margin-right: 10px;">关注</div>
+                    <div style="margin-left: 10px;">私信</div>
+                </div>
+                <div id="num" class="clearfix">
+                    <div>
+                        <strong><a href="#">0</a></strong>
+                        <p>关注</p>
+                    </div>
+                    <div>
+                        <strong><a href="#">0</a></strong>
+                        <p>粉丝</p>
+                    </div>
+                </div>
+            </div>
+            <div id="left2">
+                <div class="title">TA的关注</div>
+                <ul class="txlist clearfix">
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                </ul>
+            </div>
+            <div id="left3">
+                <div class="title">最近访客</div>
+                <ul class="txlist clearfix">
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                    <li><img src="{$config['view_public']}img/tx.jpeg"></li>
+                </ul>
+            </div>
+        </div>
+        <div id="right">
+            <ul id="nav" class="clearfix">
+                <li class="current"><a href="?c=index&a=user_wo">TA的窝</a></li>
+                <li><a href="?c=index&a=user_yj">TA的游记</a></li>
+                <li><a href="?c=index&a=user_wd">TA的问答</a></li>
+                <li><a href="?c=index&a=user_zj">TA的足迹</a></li>
+                <li><a href="?c=index&a=user_dp">TA的点评</a></li>
+                <li><a href="?c=index&a=user_jb">TA的结伴</a></li>
+            </ul>
+            {__CONTENT__}
+        </div>
+    </div>
+<include file="Public/footer"/>
+<script>
+    var c_href=window.location.href;
+    $("#nav>li>a").each(function(){
+        var href=$(this).attr("href");
+        if(c_href.indexOf(href)!=-1){
+//            alert(c_href+"包含"+href);
+            $("#nav>li").removeClass();
+            $(this).parent().addClass("current");
+        }
+    });
+
+    $(function() {
+        $("#nav>li").click(function(){
+            //alert(1);
+            $("#nav>.current").removeClass();
+            $(this).addClass("current");
+        });
+    });
+</script>
+</body>
+</html>

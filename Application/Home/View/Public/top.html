@@ -1,0 +1,58 @@
+    <style>
+        .w1000{width: 1000px;margin: 0 auto;}
+        #top a{color: #424242;}
+        #top_left{margin-left: 100px;float:left;}
+        #top_right{float: right;}
+        #top_right>li{float:left;padding: 0 12px;}
+        #top_right .red_dot{width: 6px; height: 6px;background: #ff0000;position: absolute;right: -2px;top: 3px;border-radius: 50%;}
+
+        /*"我的订单的隐藏块"*/
+        #triangle,#triangle2{width:0px;height:0px;border: 6px solid rgba(255,255,255,0);border-bottom: 6px solid #ddd;position: absolute;
+            margin-left: -6px;left: 50%;top: 13px;background-color: #fff;z-index: 10000;}
+        #triangle2{top:14px;border-bottom: 6px solid #fff;}
+        .orderList{background-color: #fff;margin-top: 6px;border: 1px solid #ddd;box-shadow: 0 1px 2px rgba(0,0,0,.2);
+            margin-left: auto;margin-right: auto;}
+        .orderList>li{line-height: 32px;border-bottom: 1px solid #ddd;cursor: pointer;font-size: 12px;text-align: center;}
+        .orderList>li:last-child{border-bottom: 0px solid #ddd;}
+        .orderList>li:hover{background-color: #f8f8f8;}
+    </style>
+    <div id="top" class="w1000x">
+        <div id="top_left"><a href="#">登陆</a>&nbsp;&nbsp;<a href="#">注册</a></div>
+        <ul id="top_right">
+            <li><a href="#">我的首页</a></li>
+            <li><a href="#">我的帖子</a></li>
+            <li><a href="#">我的足迹</a></li>
+            <li><a href="#">我的想去</a></li>
+            <li><a href="#">我的问答</a></li>
+            <li id="my_order" style="position: relative;"><a href="#">我的订单&nbsp;<i class="fa fa-angle-down"></i></a>
+                <div id="hideB" style="position: absolute" hidden>
+                    <div id="triangle"></div>
+                    <div id="triangle2"></div>
+                    <!--<div style="width: 100%;position:relative;background-color: #0e90d2;">-->
+                    <ul class="orderList">
+                        <li>11111111</li>
+                        <li>222</li>
+                        <li>333</li>
+                    </ul>
+                    <!--</div>-->
+                </div>
+            </li>
+            <li><a href="#">我的行程</a></li>
+            <li><a href="#">里斯123</a></li>
+            <li><a href="#" style="position: relative;"><i class="fa fa-envelope-o"></i><div class="red_dot"></div></a></li>
+            <li><a href="#" title="退出"><i class="fa fa-sign-out"></i></a></li>
+        </ul>
+        <div style="clear: both;"></div>
+    </div>
+</body>
+<script>
+    $(function() {
+        //发新帖
+        $("#my_order").hover(function(){
+            $("#hideB").show();
+        },function(){
+            $("#hideB").hide();
+        });
+    });
+</script>
+</html>

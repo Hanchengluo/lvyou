@@ -1,0 +1,75 @@
+<include file="Public/header"/>
+<link rel="stylesheet" href="{$config['view_public']}css/user/user_index.css">
+</head>
+<body>
+<include file="Public/top_2"/>
+<!--顶部 start-->
+<div id="user_top">
+    <!--1-->
+    <div class="u_banner">
+        <img src="{$config['view_public']}img/tx.jpeg" width="100%" height="360px">
+        <div id="btn_upload_img" hidden>上传图片</div>
+        <input type="file" name="u_pic" id="u_pic" hidden>
+    </div>
+    <!--1/-->
+    <!--2-->
+    <div class="u_info w980">
+        <div class="u_tx">
+            <a><img class="tx" src="{$config['view_public']}img/tx.jpeg" width="120px"></a>
+        </div>
+        <div class="info">
+            <span>里斯</span><span>VIP12</span>
+            <a href="#">签到</a><a href="?c=user&a=message">消息</a>
+        </div>
+    </div>
+    <!--2/-->
+</div>
+<!--顶部 end-->
+<!--主体区 start-->
+<div class="user_c w980 clearfix">
+    <div class="L">
+        <ul class="leftNav">
+            <li class="current"><a href="?c=user&a=collect">我的收藏</a></li>
+            <li><a href="?c=user&a=message">我的锦囊</a></li>
+            <li><a href="?c=user&a=order">我的订单</a></li>
+            <li><a href="?c=user&a=yhq">优惠券</a></li>
+            <li><a href="?c=user&a=tie">我的帖子</a></li>
+            <li><a href="?c=user&a=jieban">我的结伴</a></li>
+            <li><a href="?c=user&a=question">我的提问</a></li>
+            <li><a href="?c=user&a=cz">会员充值</a></li>
+        </ul>
+    </div>
+    {__CONTENT__}
+</div>
+<!--主体区 end-->
+<include file="Public/footer"/>
+<script>
+    $(function() {
+        var c_href=window.location.href;
+        $(".leftNav>li>a").each(function(){
+            var href=$(this).attr("href");
+            if(c_href.indexOf(href)!=-1){
+                $(".leftNav>li").removeClass();
+                $(this).parent().addClass("current");
+            }
+        });
+        //显示/隐藏 上传图片 按钮
+        $(".u_banner").hover(function(){
+            $("#btn_upload_img").show();
+        },function(){
+            $("#btn_upload_img").hide();
+        });
+        // 上传图片 按钮点击
+        $("#btn_upload_img").click(function(){
+            $("#u_pic").click();
+        });
+        //右侧顶部导航点击
+        $("#nav>li").click(function(){
+            //alert(1);
+            $("#nav>.current").removeClass();
+            $(this).addClass("current");
+        });
+    });
+</script>
+</body>
+</html>

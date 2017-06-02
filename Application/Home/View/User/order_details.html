@@ -1,0 +1,132 @@
+<include file="Public/header"/>
+<link rel="stylesheet" href="{$config['view_public']}css/user/order_details.css">
+<script type="text/javascript">$("title").html('查看订单');</script>
+</head>
+<body>
+<include file="Public/top_2"/>
+<div class="qReply">
+    <!--顶部的返回按钮 start-->
+    <div class="backB">
+        <a id="back" title="返回"><i class="fa fa-angle-left"></i></a>
+    </div>
+    <!--顶部的返回按钮 start-->
+    <!--主体区域 start-->
+    <div class="C w980">
+        <!--1-->
+        <div class="c_b1">
+            <span>未支付</span><span class="hint">请在57分钟46秒内支付，逾时订单将自动关闭</span>
+            <a href="#">立即支付</a>
+        </div>
+        <!--1/-->
+        <!--2-->
+        <div class="c_b2">
+            <h3>订单信息</h3>
+            <div class="order_info">
+                <p class="order_no">订单号：5321348934987834</p>
+                <p class="order_name">【五一/端午假期】石家庄直飞台湾8天往返含税机票(含7天无限流量上网卡)</p>
+                <div class="order_meta">
+                    <img src="{$config['view_public']}img/tx.jpeg" width="227" height="140">
+                    <div>
+                        <p>产品类型：五天往返机票</p>
+                        <p>出行日期：2017-05-06</p>
+                        <p>购票数量：1</p>
+                        <p class="mnum">￥999.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--2/-->
+        <!--3-->
+        <div class="c_b3">
+            <h3>旅客信息</h3>
+            <div class="lkInfoB">
+                <!--<p>旅客1</p>-->
+                <ul class="infoList clearfix">
+                    <li>
+                        <p>中文姓</p>
+                        <p>程</p>
+                    </li>
+                    <li>
+                        <p>中文名</p>
+                        <p>里斯</p>
+                    </li>
+                    <li>
+                        <p>拼音姓</p>
+                        <p>chen</p>
+                    </li>
+                    <li>
+                        <p>拼音名</p>
+                        <p>lisi</p>
+                    </li>
+                    <li>
+                        <p>性别</p>
+                        <p>男</p>
+                    </li>
+                    <li>
+                        <p>国籍</p>
+                        <p>中国</p>
+                    </li>
+                    <li>
+                        <p>出生日期</p>
+                        <p>2018-01-01</p>
+                    </li>
+                    <li>
+                        <p>出生日期</p>
+                        <p>2018-01-01</p>
+                    </li>
+                    <li>
+                        <p>出生日期</p>
+                        <p>2018-01-01</p>
+                    </li>
+                    <li>
+                        <p>出生日期</p>
+                        <p>2018-01-01</p>
+                    </li>
+                    <li>
+                        <p>出生日期</p>
+                        <p>2018-01-01</p>
+                    </li>
+                    <li>
+                        <p>出生日期</p>
+                        <p>2018-01-01</p>
+                    </li>
+                </ul>
+            </div>
+            <h3>联系人信息</h3>
+            <div class="lxrInfoB">
+                <ul class="infoList clearfix">
+                    <li>
+                        <p>中文姓</p>
+                        <p>程</p>
+                    </li>
+                    <li>
+                        <p>中文名</p>
+                        <p>里斯</p>
+                    </li>
+                    <li>
+                        <p>拼音姓</p>
+                        <p>chen</p>
+                    </li>
+                    <li>
+                        <p>拼音名</p>
+                        <p>lisi</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--3/-->
+
+    </div>
+    <!--主体区域 end-->
+</div>
+<include file="Public/footer"/>
+<script>
+    $(function() {
+        //返回按钮点击
+        $("#back").click(function(){
+            history.back(-1);
+        });
+    });
+</script>
+</body>
+</html>

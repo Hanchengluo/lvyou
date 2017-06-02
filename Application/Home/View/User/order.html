@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="{$config['view_public']}css/user/user_order.css">
+<script type="text/javascript">$("title").html('我的收藏');</script>
+
+    <div class="R">
+        <div class="sortMode"><a class="current">全部</a><a>待支付</a><a href="#">待出单</a><a href="#">待出行</a><a href="#">待评价</a></div>
+        <ul class="data_list">
+            <for star="1" end="4">
+            <li>
+                <div class="order_info"><span>订单号：5321348934987834</span><span>提交订单时间：2017-05-06 11:21:23</span><span>客服电话：44002311233</span></div>
+                <table class="order_table" style="table-layout:fixed;">
+                    <tr>
+                        <td width="20%">名称</td>
+                        <td width="110px">产品类型</td>
+                        <td width="168px">数量</td>
+                        <td width="168px">总额</td>
+                        <td width="168px">状态</td>
+                        <td width="168px">操作</td>
+                    </tr>
+                    <tr>
+                        <td><a href="">【五一/端午假期】石家庄直飞台湾8天往返含税机票(含7天无限流量上网卡)</a></td>
+                        <td>五天往返机票</td>
+                        <td>成人x1</td>
+                        <td><span class="mnum">￥210.00</span></td>
+                        <td>等待支付</td>
+                        <td>
+                            <a class="btn_zf" href="#">立即支付</a><br />
+                            <a class="btn_ck" href="?c=user&a=order_details">查看订单</a>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            </for>
+        </ul>
+    </div>
+
+<script>
+    $(function() {
+        //显示/隐藏 上传图片 按钮
+        $(".u_banner").hover(function(){
+            $("#btn_upload_img").show();
+        },function(){
+            $("#btn_upload_img").hide();
+        });
+        //"上传图片"按钮点击
+        $("#btn_upload_img").click(function(){
+            $("#u_pic").click();
+        });
+        //右侧顶部导航点击
+        $("#nav>li").click(function(){
+            //alert(1);
+            $("#nav>.current").removeClass();
+            $(this).addClass("current");
+        });
+    });
+</script>

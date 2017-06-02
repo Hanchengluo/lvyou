@@ -1,0 +1,17 @@
+<script src="Public/lib/jquery-3.2.1.min.js"></script>
+
+<div id="commentStar" data-level="0"><i class="fa fa-star" data-v="1"></i><i class="fa fa-star"  data-v="2"></i><i class="fa fa-star"  data-v="3"></i><i class="fa fa-star"  data-v="4"></i><i class="fa fa-star"  data-v="5"></i>
+<span class="hint">点击星星为它点评</span>
+</div>
+
+
+<include file="Public/header"/>
+<link rel="stylesheet" href="{$config['view_public']}css/district/district.css">
+<script type="text/javascript">$("title").html('目的地_主页');</script>
+</head>
+<body>
+
+发表评论 外框 border-radius: 10px;  内框 border-radius: 5px;
+#comment>div{margin-left: 80px;padding: 10px;border:2px solid #ddd;border-radius: 13px;background-color: rgba(255,255,255,0.5);}
+#comment>div>div:first-child{padding: 5px;border:1px solid #ddd;border-radius: 5px;}
+#comment textarea{width: 100%;height: 180px;resize: none;color: #666;line-height: 22px;outline: 0px;font-size: 12px;border: 0px;}

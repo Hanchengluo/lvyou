@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="{$config['view_public']}css/user/view_jbbm.css">
+<script type="text/javascript">$("title").html('查看报名');</script>
+
+    <div class="R">
+        <div class="sortMode"><a href="#">我的结伴</a></div>
+        <ul class="data_list">
+            <li class="clearfix">
+                <h3 style="padding-top: 10px;font-size: 16px;"><a href="#">高加索三国 6月结伴游</a></h3>
+                <div class="ty_info clearfix" style="">
+                    <div style="">
+                        <p style="color: #999;">出发&nbsp;<span style="color: #444;">2017-04-03</span></p>
+                        <p style="color: #999;">返程&nbsp;<span style="color: #444;">2017-04-03</span></p>
+                    </div>
+                    <div style="float: left;padding-left: 10px;"><br />
+                        <span style="">曼谷、清迈</span>
+                    </div>
+                </div>
+                <div class="bmUser">
+                    <p>报名用户</p>
+                    <ul class="userList">
+                        <li><span>姓名</span><span>联系方式</span></li>
+                        <li><span>姓名</span><span>联系方式</span></li>
+                        <li><span>姓名</span><span>联系方式</span></li>
+                        <li><span>姓名</span><span>联系方式</span></li>
+                        <li><span>姓名</span><span>联系方式</span></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+<script>
+    $(function() {
+        //显示/隐藏 上传图片 按钮
+        $(".u_banner").hover(function(){
+            $("#btn_upload_img").show();
+        },function(){
+            $("#btn_upload_img").hide();
+        });
+        //右侧顶部导航点击
+        $("#nav>li").click(function(){
+            //alert(1);
+            $("#nav>.current").removeClass();
+            $(this).addClass("current");
+        });
+    });
+</script>

@@ -1,0 +1,39 @@
+<include file="Public/header"/>
+<link rel="stylesheet" href="{$config['view_public']}css/community/write_question.css">
+<script type="text/javascript">$("title").html('提问');</script>
+</head>
+<body>
+<!--中间主体区 start-->
+<div class="w600 C">
+    <div class="titInput editable" contenteditable="true">一句话描述你的问题</div>
+    <div class="contentInput editable" style="margin-top: 20px;" contenteditable="true">详细内容补充...</div>
+    <div class="addTag">
+        <p style="">添加标签</p>
+        <dl class="tag_list">
+        </dl>
+        <div style="position: relative;float: left;">
+            <a class="addTag_a">+添加标签</a>
+            <input type="text" class="addTag_input" placeholder="添加标签" hidden>
+            <ul class="recommend_list" hidden>
+            </ul>
+        </div>
+    </div>
+    <div class="bm-select">
+        <select style="">
+            <option value="1">选择同时发布的论坛版面</option>
+            <for star="1" end="7">
+            <option value="{$i}">欧洲</option>
+            </for>
+        </select>
+    </div>
+    <div class="btnB">
+        <div class="btn-def"><a>发表提问</a></div>
+        <div class="btn-def cancel"><a>取消</a></div>
+    </div>
+</div>
+<!--中间主体区 end-->
+<script src="{$config['view_public']}js/community/write_question.js"></script>
+
+
+</body>
+</html>

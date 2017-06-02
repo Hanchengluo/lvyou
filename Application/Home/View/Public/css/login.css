@@ -1,0 +1,35 @@
+#center{padding-top: 50px;}
+a.logo{width: 75px;height: 90px;display: block;background: url("../img/logo.png");margin: 0 auto;}
+.input_block{background-color: #ffffff;border-radius: 4px;padding: 10px 30px;box-shadow: 0 2px 6px rgba(0,0,0,.5);}
+.input_block .top{height: 50px;border-bottom: 1px solid #ddd;}
+.input_block .top>div{border-bottom: 2px solid rgba(255,255,255,0);text-align: center;
+    width: 50%;float: left;font-size: 16px;line-height: 49px;
+    cursor: pointer;color: #666;}
+.input_block .top>div.current{border-bottom: 2px solid #ff9d00;}
+.input_block .center{padding-top: 10px;}
+.input_block .center .nodisplay{display: none;}
+.input_block input[type="text"]{width: 274px;height: 32px;padding-left: 4px;
+    outline: none;border: 1px solid #999;margin-top: 20px;border-radius: 2px;}
+.input_block  input[type="submit"]{width: 280px;height: 34px;outline: none;border: none;
+    background-color: #ff9d00;color: #fff;cursor: pointer;border-radius: 2px;}
+.input_block  input[type="submit"]:hover{background-color: #ff8a00;}
+.input_block  input[type="checkbox"]{margin: 0px;}
+.input_block #form2 input[type="submit"]{margin-top: 20px;}
+.input_block .form_link{text-align: right;}
+.input_block .form_link a{line-height: 32px;font-size: 12px;color: #999;}
+.input_block .form_link a:hover{color: #ff9d00;}
+.input_block .form_link_2{line-height: 32px;color: #666;}
+.input_block .form_link_2 a{float: right;color: #666;font-size: 12px;}
+.input_block .form_link_2 a:hover{color: #ff9d00;}
+.input_block .form_link_2 input{vertical-align: middle;}
+.input_block .form_link_2 label{padding-left: 2px;font-size: 12px;}
+/*第三方登陆*/
+.input_block .bottom{text-align: center;color:#999;margin-top: 20px;}
+.input_block .bottom p{line-height: 32px;}
+.input_block .bottom>ul{border-top:1px solid #ebebeb;margin: 0px;padding: 10px 20px 0 20px;}
+.input_block .bottom>ul>li{float: left;}
+.input_block .bottom>ul>li a{display: inline-block;margin: 0 10px;width: 40px;height: 40px;background-image: url("../img/di3fang.png")}
+.input_block .bottom>ul>li a.login_wx{background-position-x: -120px;}
+.input_block .bottom>ul>li a.login_wb{background-position-x: -40px;}
+.input_block .bottom>ul>li a.login_tb{background-position-x: -80px;}
+.input_block .bottom>ul>li a:hover{background-position-y: -40px;}

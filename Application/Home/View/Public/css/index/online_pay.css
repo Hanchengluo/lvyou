@@ -1,0 +1,41 @@
+body{background-color: #fff;}
+img{vertical-align: bottom;}
+.w780{width: 780px;margin: auto;}
+.nodisplay{display: none;}
+    .orderInfo{margin-top: 40px;border: 1px solid #bbb;padding: 10px;}
+    .payNav{}
+        .payNav>li{float: left;line-height: 42px;width: 80px;text-align: center;border: 1px solid #ddd;cursor: pointer;border-bottom: 0px;}
+        .payNav>li.current{background-color: #62b900;color: #fff;border: 1px solid #62b900;border-bottom: 0px;}
+
+        .payMode{border: 1px solid #ddd;padding: 20px 20px 0 20px;}
+        .payModeList>li{float: left;border: 1px solid #ddd;border-radius: 4px;width:210px;margin: 0 20px;line-height: 100px;text-align: center; cursor: pointer;margin-bottom: 20px;}
+
+
+
+
+
+
+.stepB{margin-top: 40px;}
+.stepList{margin: 0 auto;width:780px; }
+/*线条*/
+.stepList li{float: left;width: 260px;border-top: 4px solid #ff9d00;padding-top: 20px;position: relative;}
+li.step1,li.step4{width: 130px;}
+li.step2,li.step3{text-align: center;}
+/*文字*/
+li p{color: #ff9d00;}
+li.step1 p{position: absolute;left: -2em;}
+li.step4 p{position: absolute;right: -2em;}
+/*圆点*/
+li.step1>div{position: absolute;width: 24px;height: 24px;background-color: #ff9d00;left: -10px;top: -14px;border-radius: 50%;}
+li.step1>div>i{position:absolute;width: 8px;height: 8px;background-color: #fff;border-radius: 50%;text-align: center;left: 12px;top: 12px;margin: -4px 0 0 -4px;}
+li.step2>div{position: absolute;width: 24px;height: 24px;background-color: #ff9d00;left: 130px;top: -14px;border-radius: 50%;margin-left: -12px;}
+li.step2>div>i{position:absolute;width: 8px;height: 8px;background-color: #fff;border-radius: 50%;text-align: center;left: 12px;top: 12px;margin: -4px 0 0 -4px;}
+li.step3>div{position: absolute;width: 24px;height: 24px;background-color: #ff9d00;left: 130px;top: -14px;border-radius: 50%;margin-left: -12px;}
+li.step3>div>i{position:absolute;width: 8px;height: 8px;background-color: #fff;border-radius: 50%;text-align: center;left: 12px;top: 12px;margin: -4px 0 0 -4px;}
+li.step4>div{position: absolute;width: 24px;height: 24px;background-color: #ff9d00;right: -10px;top: -14px;border-radius: 50%;}
+li.step4>div>i{position:absolute;width: 8px;height: 8px;background-color: #fff;border-radius: 50%;text-align: center;left: 12px;top: 12px;margin: -4px 0 0 -4px;}
+/*灰色*/
+li.h{border-top: 4px solid #efefef}
+li.h>div{background-color: #fff;border: 1px solid #efefef;}
+li.h>div>i{background-color: #efefef;}
+li.h p{color: #999;}
